@@ -1,0 +1,22 @@
+ <form [formGroup]="form" (ngSubmit)="ListAllContainersByDocker_Submit()">
+  <mat-form-field>
+    <mat-label>dockerHubI (integer):</mat-label>
+    <!-- Container/ListAllContainersByDocker -->
+    <input matInput formControlName="ListAllContainersByDocker_dockerHubI"
+      required placeholder="">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>dockerHubDecryptPass (string):</mat-label>
+    <!-- Container/ListAllContainersByDocker -->
+    <input matInput
+      formControlName="ListAllContainersByDocker_dockerHubDecryptPass" required
+      placeholder="">
+  </mat-form-field>
+
+  <div>
+    <button mat-mini-fab color="primary" type="submit">
+      <mat-icon>check icon</mat-icon>
+    </button>
+  </div>
+</form>
+<div id="ListAllContainersByDocker_Result"></div>

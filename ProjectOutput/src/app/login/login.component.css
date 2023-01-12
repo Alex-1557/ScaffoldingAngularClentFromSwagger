@@ -1,0 +1,18 @@
+mat-form-field {
+    display: block;
+    margin: 10px 0;
+}
+
+login1 {
+    margin: 20px;
+    width: 500px;
+}
+
+border1 {
+    border: 1px;
+    padding: 10px;
+    border-color: gainsboro;
+    box-shadow: 5px 10px #f7f2f259;
+    border-radius: 5px;
+    border-style: solid;
+}

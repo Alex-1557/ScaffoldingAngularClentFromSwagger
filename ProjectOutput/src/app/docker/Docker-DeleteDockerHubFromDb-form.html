@@ -1,0 +1,22 @@
+ <form [formGroup]="form" (ngSubmit)="DeleteDockerHubFromDb_Submit()">
+  <mat-form-field>
+    <mat-label>dockerHubI (integer):</mat-label>
+    <!-- Docker/DeleteDockerHubFromDb -->
+    <input matInput formControlName="DeleteDockerHubFromDb_dockerHubI" required
+      placeholder="">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>vmConnectionAdminDecryptPass (string):</mat-label>
+    <!-- Docker/DeleteDockerHubFromDb -->
+    <input matInput
+      formControlName="DeleteDockerHubFromDb_vmConnectionAdminDecryptPass"
+      required placeholder="">
+  </mat-form-field>
+
+  <div>
+    <button mat-mini-fab color="primary" type="submit">
+      <mat-icon>check icon</mat-icon>
+    </button>
+  </div>
+</form>
+<div id="DeleteDockerHubFromDb_Result"></div>

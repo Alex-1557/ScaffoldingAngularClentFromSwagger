@@ -1,0 +1,21 @@
+ <form [formGroup]="form" (ngSubmit)="GetVmListRuntime_Submit()">
+  <mat-form-field>
+    <mat-label>ServerI (integer):</mat-label>
+    <!-- KvmVm/GetVmListRuntime -->
+    <input matInput formControlName="GetVmListRuntime_ServerI" required
+      placeholder="">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>ServerDecryptPass (string):</mat-label>
+    <!-- KvmVm/GetVmListRuntime -->
+    <input matInput formControlName="GetVmListRuntime_ServerDecryptPass"
+      required placeholder="">
+  </mat-form-field>
+
+  <div>
+    <button mat-mini-fab color="primary" type="submit">
+      <mat-icon>check icon</mat-icon>
+    </button>
+  </div>
+</form>
+<div id="GetVmListRuntime_Result"></div>

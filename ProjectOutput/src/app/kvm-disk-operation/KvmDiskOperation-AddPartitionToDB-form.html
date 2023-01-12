@@ -1,0 +1,117 @@
+ <form [formGroup]="form" (ngSubmit)="AddPartitionToDB_Submit()">
+  <mat-form-field>
+    <mat-label>toKvmStorageDevice (integer):</mat-label>
+    <!-- KvmDiskOperation/AddPartitionToDB -->
+    <input matInput formControlName="AddPartitionToDB_toKvmStorageDevice"
+      required placeholder="">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>toKvmLvmDevice (integer):</mat-label>
+    <!-- KvmDiskOperation/AddPartitionToDB -->
+    <input matInput formControlName="AddPartitionToDB_toKvmLvmDevice" required
+      placeholder="">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>name (string):</mat-label>
+    <!-- KvmDiskOperation/AddPartitionToDB -->
+    <input matInput formControlName="AddPartitionToDB_name" required
+      placeholder="">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>type (string):</mat-label>
+    <!-- KvmDiskOperation/AddPartitionToDB -->
+    <input matInput formControlName="AddPartitionToDB_type" required
+      placeholder="">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>uuid (string):</mat-label>
+    <!-- KvmDiskOperation/AddPartitionToDB -->
+    <input matInput formControlName="AddPartitionToDB_uuid" required
+      placeholder="">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>partUUID (string):</mat-label>
+    <!-- KvmDiskOperation/AddPartitionToDB -->
+    <input matInput formControlName="AddPartitionToDB_partUUID" required
+      placeholder="">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>ptType (string):</mat-label>
+    <!-- KvmDiskOperation/AddPartitionToDB -->
+    <input matInput formControlName="AddPartitionToDB_ptType" required
+      placeholder="">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>partLabel (string):</mat-label>
+    <!-- KvmDiskOperation/AddPartitionToDB -->
+    <input matInput formControlName="AddPartitionToDB_partLabel" required
+      placeholder="">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>blockSize (integer):</mat-label>
+    <!-- KvmDiskOperation/AddPartitionToDB -->
+    <input matInput formControlName="AddPartitionToDB_blockSize" required
+      placeholder="">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>size (string):</mat-label>
+    <!-- KvmDiskOperation/AddPartitionToDB -->
+    <input matInput formControlName="AddPartitionToDB_size" required
+      placeholder="">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>start (integer):</mat-label>
+    <!-- KvmDiskOperation/AddPartitionToDB -->
+    <input matInput formControlName="AddPartitionToDB_start" required
+      placeholder="">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>end (integer):</mat-label>
+    <!-- KvmDiskOperation/AddPartitionToDB -->
+    <input matInput formControlName="AddPartitionToDB_end" required
+      placeholder="">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>sectors (integer):</mat-label>
+    <!-- KvmDiskOperation/AddPartitionToDB -->
+    <input matInput formControlName="AddPartitionToDB_sectors" required
+      placeholder="">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>isKvmInternal (integer):</mat-label>
+    <!-- KvmDiskOperation/AddPartitionToDB -->
+    <input matInput formControlName="AddPartitionToDB_isKvmInternal" required
+      placeholder="">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>toVmSpecial (integer):</mat-label>
+    <!-- KvmDiskOperation/AddPartitionToDB -->
+    <input matInput formControlName="AddPartitionToDB_toVmSpecial" required
+      placeholder="">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>toVm (integer):</mat-label>
+    <!-- KvmDiskOperation/AddPartitionToDB -->
+    <input matInput formControlName="AddPartitionToDB_toVm" required
+      placeholder="">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>isBootable (integer):</mat-label>
+    <!-- KvmDiskOperation/AddPartitionToDB -->
+    <input matInput formControlName="AddPartitionToDB_isBootable" required
+      placeholder="">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>currentState (string):</mat-label>
+    <!-- KvmDiskOperation/AddPartitionToDB -->
+    <input matInput formControlName="AddPartitionToDB_currentState" required
+      placeholder="">
+  </mat-form-field>
+
+  <div>
+    <button mat-mini-fab color="primary" type="submit">
+      <mat-icon>check icon</mat-icon>
+    </button>
+  </div>
+</form>
+<div id="AddPartitionToDB_Result"></div>

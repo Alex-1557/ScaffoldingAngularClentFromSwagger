@@ -1,0 +1,21 @@
+ <form [formGroup]="form" (ngSubmit)="GetUfwRules_Submit()">
+  <mat-form-field>
+    <mat-label>serverI (integer):</mat-label>
+    <!-- KvmIp/GetUfwRules -->
+    <input matInput formControlName="GetUfwRules_serverI" required
+      placeholder="">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>serverDecryptPass (string):</mat-label>
+    <!-- KvmIp/GetUfwRules -->
+    <input matInput formControlName="GetUfwRules_serverDecryptPass" required
+      placeholder="">
+  </mat-form-field>
+
+  <div>
+    <button mat-mini-fab color="primary" type="submit">
+      <mat-icon>check icon</mat-icon>
+    </button>
+  </div>
+</form>
+<div id="GetUfwRules_Result"></div>

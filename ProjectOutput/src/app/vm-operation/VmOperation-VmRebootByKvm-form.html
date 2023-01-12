@@ -1,0 +1,27 @@
+ <form [formGroup]="form" (ngSubmit)="VmRebootByKvm_Submit()">
+  <mat-form-field>
+    <mat-label>serverI (integer):</mat-label>
+    <!-- VmOperation/VmRebootByKvm -->
+    <input matInput formControlName="VmRebootByKvm_serverI" required
+      placeholder="">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>serverDecryptPass (string):</mat-label>
+    <!-- VmOperation/VmRebootByKvm -->
+    <input matInput formControlName="VmRebootByKvm_serverDecryptPass" required
+      placeholder="">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>vmName (string):</mat-label>
+    <!-- VmOperation/VmRebootByKvm -->
+    <input matInput formControlName="VmRebootByKvm_vmName" required
+      placeholder="">
+  </mat-form-field>
+
+  <div>
+    <button mat-mini-fab color="primary" type="submit">
+      <mat-icon>check icon</mat-icon>
+    </button>
+  </div>
+</form>
+<div id="VmRebootByKvm_Result"></div>

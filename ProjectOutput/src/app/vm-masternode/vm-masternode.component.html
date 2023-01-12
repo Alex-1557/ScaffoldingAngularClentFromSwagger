@@ -1,0 +1,23 @@
+<mat-card>
+    <mat-card-header>
+        <mat-card-title>Accounting users masternodes stored on Virtual Machines</mat-card-title>
+    </mat-card-header>
+    <mat-card-content>
+        <mat-list class="mat-small">
+            (Admin) 1. <u>GetVmMasternodes</u> : "OK. Working with DB only."
+            <br>
+            <app-VmMasternodeGetVmMasternodes></app-VmMasternodeGetVmMasternodes>
+            <mat-divider style="margin: 10px;"></mat-divider>
+            (Admin) 2. <u>UpdateVmMasternodeInfo</u> : "OK. Working with DB and VM
+            runtime
+            environment."
+            <br>
+            <app-VmMasternodeUpdateVmMasternodeInfo></app-VmMasternodeUpdateVmMasternodeInfo>
+            <mat-divider style="margin: 10px;"></mat-divider>
+            (Admin) 3. <u>UpdateAllVmMasternodesInfo</u> : "API not found."
+            <br>
+            <app-VmMasternodeUpdateAllVmMasternodesInfo></app-VmMasternodeUpdateAllVmMasternodesInfo>
+            <mat-divider style="margin: 10px;"></mat-divider>
+        </mat-list>
+    </mat-card-content>
+</mat-card>

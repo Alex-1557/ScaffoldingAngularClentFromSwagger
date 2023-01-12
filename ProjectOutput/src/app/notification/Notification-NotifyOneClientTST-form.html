@@ -1,0 +1,15 @@
+ <form [formGroup]="form" (ngSubmit)="NotifyOneClientTST_Submit()">
+  <mat-form-field>
+    <mat-label>ConnectionID (string):</mat-label>
+    <!-- Notification/NotifyOneClientTST -->
+    <input matInput formControlName="NotifyOneClientTST_ConnectionID" required
+      placeholder="">
+  </mat-form-field>
+
+  <div>
+    <button mat-mini-fab color="primary" type="submit">
+      <mat-icon>check icon</mat-icon>
+    </button>
+  </div>
+</form>
+<div id="NotifyOneClientTST_Result"></div>

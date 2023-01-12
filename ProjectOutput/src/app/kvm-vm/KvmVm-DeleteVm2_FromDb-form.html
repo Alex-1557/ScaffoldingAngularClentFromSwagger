@@ -1,0 +1,33 @@
+ <form [formGroup]="form" (ngSubmit)="DeleteVm2_FromDb_Submit()">
+  <mat-form-field>
+    <mat-label>serverI (integer):</mat-label>
+    <!-- KvmVm/DeleteVm2_FromDb -->
+    <input matInput formControlName="DeleteVm2_FromDb_serverI" required
+      placeholder="">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>serverDecryptPass (string):</mat-label>
+    <!-- KvmVm/DeleteVm2_FromDb -->
+    <input matInput formControlName="DeleteVm2_FromDb_serverDecryptPass"
+      required placeholder="">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>vmI (integer):</mat-label>
+    <!-- KvmVm/DeleteVm2_FromDb -->
+    <input matInput formControlName="DeleteVm2_FromDb_vmI" required
+      placeholder="">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>removeAllStorage (boolean):</mat-label>
+    <!-- KvmVm/DeleteVm2_FromDb -->
+    <input matInput formControlName="DeleteVm2_FromDb_removeAllStorage" required
+      placeholder="">
+  </mat-form-field>
+
+  <div>
+    <button mat-mini-fab color="primary" type="submit">
+      <mat-icon>check icon</mat-icon>
+    </button>
+  </div>
+</form>
+<div id="DeleteVm2_FromDb_Result"></div>

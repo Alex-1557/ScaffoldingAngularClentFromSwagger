@@ -1,0 +1,14 @@
+ <form [formGroup]="form" (ngSubmit)="GetVmInfo_Submit()">
+  <mat-form-field>
+    <mat-label>VmI (integer):</mat-label>
+    <!-- KvmVm/GetVmInfo -->
+    <input matInput formControlName="GetVmInfo_VmI" required placeholder="">
+  </mat-form-field>
+
+  <div>
+    <button mat-mini-fab color="primary" type="submit">
+      <mat-icon>check icon</mat-icon>
+    </button>
+  </div>
+</form>
+<div id="GetVmInfo_Result"></div>

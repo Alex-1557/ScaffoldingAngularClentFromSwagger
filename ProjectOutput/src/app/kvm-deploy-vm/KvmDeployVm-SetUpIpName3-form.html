@@ -1,0 +1,45 @@
+ <form [formGroup]="form" (ngSubmit)="SetUpIpName3_Submit()">
+  <mat-form-field>
+    <mat-label>serverI (integer):</mat-label>
+    <!-- KvmDeployVm/SetUpIpName3 -->
+    <input matInput formControlName="SetUpIpName3_serverI" required
+      placeholder="">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>serverDecryptPass (string):</mat-label>
+    <!-- KvmDeployVm/SetUpIpName3 -->
+    <input matInput formControlName="SetUpIpName3_serverDecryptPass" required
+      placeholder="">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>kvmDevice (string):</mat-label>
+    <!-- KvmDeployVm/SetUpIpName3 -->
+    <input matInput formControlName="SetUpIpName3_kvmDevice" required
+      placeholder="">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>userName (string):</mat-label>
+    <!-- KvmDeployVm/SetUpIpName3 -->
+    <input matInput formControlName="SetUpIpName3_userName" required
+      placeholder="">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>password (string):</mat-label>
+    <!-- KvmDeployVm/SetUpIpName3 -->
+    <input matInput formControlName="SetUpIpName3_password" required
+      placeholder="">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>ipConfigJsonParameters (string):</mat-label>
+    <!-- KvmDeployVm/SetUpIpName3 -->
+    <input matInput formControlName="SetUpIpName3_ipConfigJsonParameters"
+      required placeholder="">
+  </mat-form-field>
+
+  <div>
+    <button mat-mini-fab color="primary" type="submit">
+      <mat-icon>check icon</mat-icon>
+    </button>
+  </div>
+</form>
+<div id="SetUpIpName3_Result"></div>

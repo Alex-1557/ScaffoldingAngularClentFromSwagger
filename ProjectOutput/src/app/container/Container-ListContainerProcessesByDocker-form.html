@@ -1,0 +1,28 @@
+ <form [formGroup]="form" (ngSubmit)="ListContainerProcessesByDocker_Submit()">
+  <mat-form-field>
+    <mat-label>dockerHubI (integer):</mat-label>
+    <!-- Container/ListContainerProcessesByDocker -->
+    <input matInput formControlName="ListContainerProcessesByDocker_dockerHubI"
+      required placeholder="">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>dockerHubDecryptPass (string):</mat-label>
+    <!-- Container/ListContainerProcessesByDocker -->
+    <input matInput
+      formControlName="ListContainerProcessesByDocker_dockerHubDecryptPass"
+      required placeholder="">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>containerID (string):</mat-label>
+    <!-- Container/ListContainerProcessesByDocker -->
+    <input matInput formControlName="ListContainerProcessesByDocker_containerID"
+      required placeholder="">
+  </mat-form-field>
+
+  <div>
+    <button mat-mini-fab color="primary" type="submit">
+      <mat-icon>check icon</mat-icon>
+    </button>
+  </div>
+</form>
+<div id="ListContainerProcessesByDocker_Result"></div>

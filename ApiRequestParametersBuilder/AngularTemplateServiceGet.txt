@@ -1,0 +1,6 @@
+﻿    @@(item: !): Observable<any> {
+        var url = "/~/@@";
+        let queryParams = new HttpParams()
+            ^$
+        return this.http.get(url, { params: queryParams }).pipe();
+    }

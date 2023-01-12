@@ -1,0 +1,54 @@
+ <form [formGroup]="form" (ngSubmit)="CreateContainerByDockerRaw_Submit()">
+  <mat-form-field>
+    <mat-label>vmConnectionAdminDecryptPass (string):</mat-label>
+    <!-- Container/CreateContainerByDockerRaw -->
+    <input matInput
+      formControlName="CreateContainerByDockerRaw_vmConnectionAdminDecryptPass"
+      required placeholder="">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>dockerHubDecryptPass (string):</mat-label>
+    <!-- Container/CreateContainerByDockerRaw -->
+    <input matInput
+      formControlName="CreateContainerByDockerRaw_dockerHubDecryptPass" required
+      placeholder="">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>toDockerHub (integer):</mat-label>
+    <!-- Container/CreateContainerByDockerRaw -->
+    <input matInput formControlName="CreateContainerByDockerRaw_toDockerHub"
+      required placeholder="">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>toDockerRegistry (integer):</mat-label>
+    <!-- Container/CreateContainerByDockerRaw -->
+    <input matInput
+      formControlName="CreateContainerByDockerRaw_toDockerRegistry" required
+      placeholder="">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>toCoin (integer):</mat-label>
+    <!-- Container/CreateContainerByDockerRaw -->
+    <input matInput formControlName="CreateContainerByDockerRaw_toCoin" required
+      placeholder="">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>toUser (integer):</mat-label>
+    <!-- Container/CreateContainerByDockerRaw -->
+    <input matInput formControlName="CreateContainerByDockerRaw_toUser" required
+      placeholder="">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>jsonParameters (string):</mat-label>
+    <!-- Container/CreateContainerByDockerRaw -->
+    <input matInput formControlName="CreateContainerByDockerRaw_jsonParameters"
+      required placeholder="">
+  </mat-form-field>
+
+  <div>
+    <button mat-mini-fab color="primary" type="submit">
+      <mat-icon>check icon</mat-icon>
+    </button>
+  </div>
+</form>
+<div id="CreateContainerByDockerRaw_Result"></div>

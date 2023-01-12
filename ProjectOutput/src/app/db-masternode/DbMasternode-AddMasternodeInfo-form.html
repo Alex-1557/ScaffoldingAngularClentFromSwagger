@@ -1,0 +1,49 @@
+  <form [formGroup]="form" (ngSubmit)="AddMasternodeInfo_Submit()" >
+        <mat-form-field>
+      <mat-label>toVm (integer):</mat-label>
+      <!-- DbMasternode/AddMasternodeInfo -->
+      <input matInput formControlName="AddMasternodeInfo_toVm" required placeholder="">     
+    </mat-form-field>
+    <mat-form-field>
+      <mat-label>toVmUser (integer):</mat-label>
+      <!-- DbMasternode/AddMasternodeInfo -->
+      <input matInput formControlName="AddMasternodeInfo_toVmUser" required placeholder="">     
+    </mat-form-field>
+    <mat-form-field>
+      <mat-label>toUser (integer):</mat-label>
+      <!-- DbMasternode/AddMasternodeInfo -->
+      <input matInput formControlName="AddMasternodeInfo_toUser" required placeholder="">     
+    </mat-form-field>
+    <mat-form-field>
+      <mat-label>toCoin (integer):</mat-label>
+      <!-- DbMasternode/AddMasternodeInfo -->
+      <input matInput formControlName="AddMasternodeInfo_toCoin" required placeholder="">     
+    </mat-form-field>
+    <mat-form-field>
+      <mat-label>configPath (string):</mat-label>
+      <!-- DbMasternode/AddMasternodeInfo -->
+      <input matInput formControlName="AddMasternodeInfo_configPath" required placeholder="">     
+    </mat-form-field>
+    <mat-form-field>
+      <mat-label>statusCommand (string):</mat-label>
+      <!-- DbMasternode/AddMasternodeInfo -->
+      <input matInput formControlName="AddMasternodeInfo_statusCommand" required placeholder="">     
+    </mat-form-field>
+    <mat-form-field>
+      <mat-label>config (string):</mat-label>
+      <!-- DbMasternode/AddMasternodeInfo -->
+      <input matInput formControlName="AddMasternodeInfo_config" required placeholder="">     
+    </mat-form-field>
+    <mat-form-field>
+      <mat-label>comment (string):</mat-label>
+      <!-- DbMasternode/AddMasternodeInfo -->
+      <input matInput formControlName="AddMasternodeInfo_comment" required placeholder="">     
+    </mat-form-field>
+
+    <div>
+        <button mat-mini-fab color="primary" type="submit">
+           <mat-icon>check icon</mat-icon>
+        </button>
+    </div>
+  </form>
+  <div id="AddMasternodeInfo_Result"></div>

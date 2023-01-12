@@ -1,0 +1,44 @@
+﻿import { Component, OnInit } from '@angular/core';
+import { BaseFormComponent } from '../base-form.component';
+import { FormGroup, FormControl } from '@angular/forms';
+import { ActivatedRoute, Router } from '@angular/router';
+import { ~Service } from "./~-service"
+import { ! } from './~-input'
+
+@Component({
+  selector: 'app-~@@',
+  templateUrl: '~-@@-form.html',
+  styleUrls: ['./|.component.css']
+})
+
+export class ~@@Component
+  extends BaseFormComponent implements OnInit {
+
+  ~@@Result?: any;
+
+  constructor(
+    private activatedRoute: ActivatedRoute,
+    private router: Router,
+    private ~Service: ~Service) {
+    super();
+  }
+
+  ngOnInit() {
+    this.form = new FormGroup({
+       ^(
+    });
+  }
+
+  @@_Submit() {
+    var @@_Request = <@@_Post>{};
+    ^)
+
+    this.~Service.@@(@@_Request)
+      .subscribe(result => {
+        console.log(result);
+        this.~@@Result = result;
+      }, error => {
+        console.log(error);
+      });
+  }
+}

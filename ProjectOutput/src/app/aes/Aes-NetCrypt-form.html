@@ -1,0 +1,20 @@
+ <form [formGroup]="form" (ngSubmit)="NetCrypt_Submit()">
+  <mat-form-field>
+    <mat-label>Text (string):</mat-label>
+    <!-- Aes/NetCrypt -->
+    <input matInput formControlName="NetCrypt_Text" required placeholder="">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>KeyString (string):</mat-label>
+    <!-- Aes/NetCrypt -->
+    <input matInput formControlName="NetCrypt_KeyString" required
+      placeholder="">
+  </mat-form-field>
+
+  <div>
+    <button mat-mini-fab color="primary" type="submit">
+      <mat-icon>check icon</mat-icon>
+    </button>
+  </div>
+</form>
+<div id="NetCrypt_Result"></div>

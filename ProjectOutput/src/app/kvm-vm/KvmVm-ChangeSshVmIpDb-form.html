@@ -1,0 +1,27 @@
+ <form [formGroup]="form" (ngSubmit)="ChangeSshVmIpDb_Submit()">
+  <mat-form-field>
+    <mat-label>vmName (string):</mat-label>
+    <!-- KvmVm/ChangeSshVmIpDb -->
+    <input matInput formControlName="ChangeSshVmIpDb_vmName" required
+      placeholder="">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>mainIp (string):</mat-label>
+    <!-- KvmVm/ChangeSshVmIpDb -->
+    <input matInput formControlName="ChangeSshVmIpDb_mainIp" required
+      placeholder="">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>kvmBridgeName (string):</mat-label>
+    <!-- KvmVm/ChangeSshVmIpDb -->
+    <input matInput formControlName="ChangeSshVmIpDb_kvmBridgeName" required
+      placeholder="">
+  </mat-form-field>
+
+  <div>
+    <button mat-mini-fab color="primary" type="submit">
+      <mat-icon>check icon</mat-icon>
+    </button>
+  </div>
+</form>
+<div id="ChangeSshVmIpDb_Result"></div>

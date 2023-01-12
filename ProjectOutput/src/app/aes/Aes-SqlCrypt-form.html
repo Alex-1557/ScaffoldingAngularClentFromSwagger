@@ -1,0 +1,20 @@
+ <form [formGroup]="form" (ngSubmit)="SqlCrypt_Submit()">
+  <mat-form-field>
+    <mat-label>Text (string):</mat-label>
+    <!-- Aes/SqlCrypt -->
+    <input matInput formControlName="SqlCrypt_Text" required placeholder="">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>KeyString (string):</mat-label>
+    <!-- Aes/SqlCrypt -->
+    <input matInput formControlName="SqlCrypt_KeyString" required
+      placeholder="">
+  </mat-form-field>
+
+  <div>
+    <button mat-mini-fab color="primary" type="submit">
+      <mat-icon>check icon</mat-icon>
+    </button>
+  </div>
+</form>
+<div id="SqlCrypt_Result"></div>

@@ -1,0 +1,33 @@
+ <form [formGroup]="form" (ngSubmit)="ZipPartition_Submit()">
+  <mat-form-field>
+    <mat-label>serverI (integer):</mat-label>
+    <!-- VmImage/ZipPartition -->
+    <input matInput formControlName="ZipPartition_serverI" required
+      placeholder="">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>serverDecryptPass (string):</mat-label>
+    <!-- VmImage/ZipPartition -->
+    <input matInput formControlName="ZipPartition_serverDecryptPass" required
+      placeholder="">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>serverDevice (string):</mat-label>
+    <!-- VmImage/ZipPartition -->
+    <input matInput formControlName="ZipPartition_serverDevice" required
+      placeholder="">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>isoImageFileName (string):</mat-label>
+    <!-- VmImage/ZipPartition -->
+    <input matInput formControlName="ZipPartition_isoImageFileName" required
+      placeholder="">
+  </mat-form-field>
+
+  <div>
+    <button mat-mini-fab color="primary" type="submit">
+      <mat-icon>check icon</mat-icon>
+    </button>
+  </div>
+</form>
+<div id="ZipPartition_Result"></div>

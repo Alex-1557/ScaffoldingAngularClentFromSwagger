@@ -1,0 +1,60 @@
+<mat-card>
+    <mat-card-header>
+        <mat-card-title>Operation with masternode templates</mat-card-title>
+    </mat-card-header>
+    <mat-card-content>
+        <mat-list class="mat-small">
+            (Admin) 1. <u>GetRegistryList</u> : "OK. Working with DB only."
+            <br>
+            <app-RegistryGetRegistryList></app-RegistryGetRegistryList>
+            <mat-divider style="margin: 10px;"></mat-divider>
+            (Admin) 2. <u>GetRegistryReportFromDb</u> : "OK. Working with DB only. Has
+            bug for print Manifest to output."
+            <br>
+            <app-RegistryGetRegistryReportFromDb></app-RegistryGetRegistryReportFromDb>
+            <mat-divider style="margin: 10px;"></mat-divider>
+            (Admin) 3. <u>AddRegistryInfoToDb</u> : "OK. Working with DB only."
+            <br>
+            <app-RegistryAddRegistryInfoToDb></app-RegistryAddRegistryInfoToDb>
+            <mat-divider style="margin: 10px;"></mat-divider>
+            (User) 4. <u>GetRegistryImageList</u> : "OK. Working with DB only."
+            <br>
+            <app-RegistryGetRegistryImageList></app-RegistryGetRegistryImageList>
+            <mat-divider style="margin: 10px;"></mat-divider>
+            (Admin) 5. <u>DeleteRegistryImageFromDb</u> : "OK. Working with DB only."
+            <br>
+            <app-RegistryDeleteRegistryImageFromDb></app-RegistryDeleteRegistryImageFromDb>
+            <mat-divider style="margin: 10px;"></mat-divider>
+            (User) 6. <u>GetRegistryRuntimeCatalog</u> : "OK. Finished."
+            <br>
+            <app-RegistryGetRegistryRuntimeCatalog></app-RegistryGetRegistryRuntimeCatalog>
+            <mat-divider style="margin: 10px;"></mat-divider>
+            (User) 7. <u>GetRegistryRuntimeTagList</u> : "OK. Finished."
+            <br>
+            <app-RegistryGetRegistryRuntimeTagList></app-RegistryGetRegistryRuntimeTagList>
+            <mat-divider style="margin: 10px;"></mat-divider>
+            (User) 8. <u>GetRegistryRuntimeManifestAndDigest</u> : "OK. Finished. Print
+            raw Manifest to output, but GetRegistryRuntimeFullContent parse output
+            of this API correctly."
+            <br>
+            <app-RegistryGetRegistryRuntimeManifestAndDigest></app-RegistryGetRegistryRuntimeManifestAndDigest>
+            <mat-divider style="margin: 10px;"></mat-divider>
+            (User) 9. <u>GetRegistryRuntimeFullContent</u> : "OK. Finished."
+            <br>
+            <app-RegistryGetRegistryRuntimeFullContent></app-RegistryGetRegistryRuntimeFullContent>
+            <mat-divider style="margin: 10px;"></mat-divider>
+            (Admin) 10. <u>UpdateRegistryDbFromRuntime</u> : "OK. Finished."
+            <br>
+            <app-RegistryUpdateRegistryDbFromRuntime></app-RegistryUpdateRegistryDbFromRuntime>
+            <mat-divider style="margin: 10px;"></mat-divider>
+            (Admin) 11. <u>AddNewRegistryServerToDb</u> : "API not found."
+            <br>
+            <app-RegistryAddNewRegistryServerToDb></app-RegistryAddNewRegistryServerToDb>
+            <mat-divider style="margin: 10px;"></mat-divider>
+            (Admin) 12. <u>LoadRegistryImageToDb</u> : "API not found."
+            <br>
+            <app-RegistryLoadRegistryImageToDb></app-RegistryLoadRegistryImageToDb>
+            <mat-divider style="margin: 10px;"></mat-divider>
+        </mat-list>
+    </mat-card-content>
+</mat-card>

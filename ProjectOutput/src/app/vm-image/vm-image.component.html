@@ -1,0 +1,33 @@
+<mat-card>
+    <mat-card-header>
+        <mat-card-title>Operation with full Virtual Mashine images holding
+            masternode templates</mat-card-title>
+    </mat-card-header>
+    <mat-card-content>
+        <mat-list class="mat-small">
+            (Admin) 1. <u>ZipPartition</u> : "Ok. Working with server runtime
+            environment."
+            <br>
+            <app-VmImageZipPartition></app-VmImageZipPartition>
+            <mat-divider style="margin: 10px;"></mat-divider>
+            (Admin) 2. <u>ListPartitionImages</u> : "Ok. Working with server runtime
+            environment."
+            <br>
+            <app-VmImageListPartitionImages></app-VmImageListPartitionImages>
+            <mat-divider style="margin: 10px;"></mat-divider>
+            (Admin) 3. <u>ListPartitionImagesFromDB</u> : "OK. Working with DB only."
+            <br>
+            <app-VmImageListPartitionImagesFromDB></app-VmImageListPartitionImagesFromDB>
+            <mat-divider style="margin: 10px;"></mat-divider>
+            (Admin) 4. <u>SyncPartitionImages</u> : "OK. Working with server runtime
+            environment and DB."
+            <br>
+            <app-VmImageSyncPartitionImages></app-VmImageSyncPartitionImages>
+            <mat-divider style="margin: 10px;"></mat-divider>
+            (User) 5. <u>UnZipPartition</u> : "API not found."
+            <br>
+            <app-VmImageUnZipPartition></app-VmImageUnZipPartition>
+            <mat-divider style="margin: 10px;"></mat-divider>
+        </mat-list>
+    </mat-card-content>
+</mat-card>

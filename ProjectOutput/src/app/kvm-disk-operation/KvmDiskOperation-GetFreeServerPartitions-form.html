@@ -1,0 +1,27 @@
+ <form [formGroup]="form" (ngSubmit)="GetFreeServerPartitions_Submit()">
+  <mat-form-field>
+    <mat-label>ServerI (integer):</mat-label>
+    <!-- KvmDiskOperation/GetFreeServerPartitions -->
+    <input matInput formControlName="GetFreeServerPartitions_ServerI" required
+      placeholder="">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>GapOnly (boolean):</mat-label>
+    <!-- KvmDiskOperation/GetFreeServerPartitions -->
+    <input matInput formControlName="GetFreeServerPartitions_GapOnly" required
+      placeholder="">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>OneDeviceOnly (string):</mat-label>
+    <!-- KvmDiskOperation/GetFreeServerPartitions -->
+    <input matInput formControlName="GetFreeServerPartitions_OneDeviceOnly"
+      required placeholder="">
+  </mat-form-field>
+
+  <div>
+    <button mat-mini-fab color="primary" type="submit">
+      <mat-icon>check icon</mat-icon>
+    </button>
+  </div>
+</form>
+<div id="GetFreeServerPartitions_Result"></div>

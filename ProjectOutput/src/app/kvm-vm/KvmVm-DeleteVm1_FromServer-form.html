@@ -1,0 +1,33 @@
+ <form [formGroup]="form" (ngSubmit)="DeleteVm1_FromServer_Submit()">
+  <mat-form-field>
+    <mat-label>serverI (integer):</mat-label>
+    <!-- KvmVm/DeleteVm1_FromServer -->
+    <input matInput formControlName="DeleteVm1_FromServer_serverI" required
+      placeholder="">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>serverDecryptPass (string):</mat-label>
+    <!-- KvmVm/DeleteVm1_FromServer -->
+    <input matInput formControlName="DeleteVm1_FromServer_serverDecryptPass"
+      required placeholder="">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>vmI (integer):</mat-label>
+    <!-- KvmVm/DeleteVm1_FromServer -->
+    <input matInput formControlName="DeleteVm1_FromServer_vmI" required
+      placeholder="">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>removeAllStorage (boolean):</mat-label>
+    <!-- KvmVm/DeleteVm1_FromServer -->
+    <input matInput formControlName="DeleteVm1_FromServer_removeAllStorage"
+      required placeholder="">
+  </mat-form-field>
+
+  <div>
+    <button mat-mini-fab color="primary" type="submit">
+      <mat-icon>check icon</mat-icon>
+    </button>
+  </div>
+</form>
+<div id="DeleteVm1_FromServer_Result"></div>

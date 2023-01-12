@@ -1,0 +1,4 @@
+﻿    @@(item: !): Observable<any> {
+        var url = "/~/@@";
+        return this.http.post(url, item).pipe();
+    }

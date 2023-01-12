@@ -1,0 +1,83 @@
+ <form [formGroup]="form" (ngSubmit)="StartMasterNodeContainerByBash_Submit()">
+  <mat-form-field>
+    <mat-label>vmConnectionAdminDecryptPass (string):</mat-label>
+    <!-- Container/StartMasterNodeContainerByBash -->
+    <input matInput
+      formControlName="StartMasterNodeContainerByBash_vmConnectionAdminDecryptPass"
+      required placeholder="">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>toDockerHub (integer):</mat-label>
+    <!-- Container/StartMasterNodeContainerByBash -->
+    <input matInput formControlName="StartMasterNodeContainerByBash_toDockerHub"
+      required placeholder="">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>toDockerRegistry (integer):</mat-label>
+    <!-- Container/StartMasterNodeContainerByBash -->
+    <input matInput
+      formControlName="StartMasterNodeContainerByBash_toDockerRegistry" required
+      placeholder="">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>toCoin (integer):</mat-label>
+    <!-- Container/StartMasterNodeContainerByBash -->
+    <input matInput formControlName="StartMasterNodeContainerByBash_toCoin"
+      required placeholder="">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>toUser (integer):</mat-label>
+    <!-- Container/StartMasterNodeContainerByBash -->
+    <input matInput formControlName="StartMasterNodeContainerByBash_toUser"
+      required placeholder="">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>name (string):</mat-label>
+    <!-- Container/StartMasterNodeContainerByBash -->
+    <input matInput formControlName="StartMasterNodeContainerByBash_name"
+      required placeholder="">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>externalIP (string):</mat-label>
+    <!-- Container/StartMasterNodeContainerByBash -->
+    <input matInput formControlName="StartMasterNodeContainerByBash_externalIP"
+      required placeholder="">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>port (integer):</mat-label>
+    <!-- Container/StartMasterNodeContainerByBash -->
+    <input matInput formControlName="StartMasterNodeContainerByBash_port"
+      required placeholder="">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>exposePort (integer):</mat-label>
+    <!-- Container/StartMasterNodeContainerByBash -->
+    <input matInput formControlName="StartMasterNodeContainerByBash_exposePort"
+      required placeholder="">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>privKey (string):</mat-label>
+    <!-- Container/StartMasterNodeContainerByBash -->
+    <input matInput formControlName="StartMasterNodeContainerByBash_privKey"
+      required placeholder="">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>txIndex (integer):</mat-label>
+    <!-- Container/StartMasterNodeContainerByBash -->
+    <input matInput formControlName="StartMasterNodeContainerByBash_txIndex"
+      required placeholder="">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>seedNode (string):</mat-label>
+    <!-- Container/StartMasterNodeContainerByBash -->
+    <input matInput formControlName="StartMasterNodeContainerByBash_seedNode"
+      required placeholder="">
+  </mat-form-field>
+
+  <div>
+    <button mat-mini-fab color="primary" type="submit">
+      <mat-icon>check icon</mat-icon>
+    </button>
+  </div>
+</form>
+<div id="StartMasterNodeContainerByBash_Result"></div>

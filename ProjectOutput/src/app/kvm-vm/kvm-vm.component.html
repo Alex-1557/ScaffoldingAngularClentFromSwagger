@@ -1,0 +1,66 @@
+<mat-card>
+    <mat-card-header>
+        <mat-card-title>Server operations with user Virtual Machines</mat-card-title>
+    </mat-card-header>
+    <mat-card-content>
+        <mat-list class="mat-small" style="margin: 10px;">
+            (User) 1. <u>GetVmInfo</u> : "OK. Working with DB only."
+            <br>
+            <app-KvmVmGetVmInfo></app-KvmVmGetVmInfo>
+            <mat-divider style="margin: 10px;"></mat-divider>
+            (Admin) 2. <u>GetVmList</u> : "OK. Working with DB only."
+            <br>
+            <app-KvmVmGetVmList></app-KvmVmGetVmList>
+            <mat-divider style="margin: 10px;"></mat-divider>
+            (Admin) 3. <u>GetVmListInfo</u> : "OK. Working with DB only."
+            <br>
+            <app-KvmVmGetVmListInfo></app-KvmVmGetVmListInfo>
+            <mat-divider style="margin: 10px;"></mat-divider>
+            (Admin) 4. <u>GetVmListRuntime</u> : "OK. Working with VM runtime
+            environment."
+            <br>
+            <app-KvmVmGetVmListRuntime></app-KvmVmGetVmListRuntime>
+            <mat-divider style="margin: 10px;"></mat-divider>
+            (User) 5. <u>DeleteVm1_FromServer</u> : "OK. Working with server
+            environment."
+            <br>
+            <app-KvmVmDeleteVm1_FromServer></app-KvmVmDeleteVm1_FromServer>
+            <mat-divider style="margin: 10px;"></mat-divider>
+            (User) 6. <u>DeleteVm2_FromDb</u> : "OK. Working with DB only."
+            <br>
+            <app-KvmVmDeleteVm2_FromDb></app-KvmVmDeleteVm2_FromDb>
+            <mat-divider style="margin: 10px;"></mat-divider>
+            (User) 7. <u>DumpXmlVm</u> : "OK. Working with server environment."
+            <br>
+            <app-KvmVmDumpXmlVm></app-KvmVmDumpXmlVm>
+            <mat-divider style="margin: 10px;"></mat-divider>
+            (User) 8. <u>ListVmDiskByKvm</u> : "OK. Working with server environment."
+            <br>
+            <app-KvmVmListVmDiskByKvm></app-KvmVmListVmDiskByKvm>
+            <mat-divider style="margin: 10px;"></mat-divider>
+            (User) 9. <u>ChangeSshVmIpDb</u> : "OK. Working with Db only."
+            <br>
+            <app-KvmVmChangeSshVmIpDb></app-KvmVmChangeSshVmIpDb>
+            <mat-divider style="margin: 10px;"></mat-divider>
+            (User) 10. <u>UpdateVmInfo</u> : "OK. Working with Db and VM/Server runtime
+            environment. Need to refactoring code."
+            <br>
+            <app-KvmVmUpdateVmInfo></app-KvmVmUpdateVmInfo>
+            <mat-divider style="margin: 10px;"></mat-divider>
+            (Admin) 11. <u>UpdateAllVmInfo</u> : "OK. Working with Db and VM/Server
+            runtime
+            environment."
+            <br>
+            <app-KvmVmUpdateAllVmInfo></app-KvmVmUpdateAllVmInfo>
+            <mat-divider style="margin: 10px;"></mat-divider>
+            (Admin) 12. <u>BashForEachVm</u> : "OK. Working VM runtime environment."
+            <br>
+            <app-KvmVmBashForEachVm></app-KvmVmBashForEachVm>
+            <mat-divider style="margin: 10px;"></mat-divider>
+            (User) 13. <u>LoadFile</u> : "Don't tested. Working with DB only."
+            <br>
+            <app-KvmVmLoadFile></app-KvmVmLoadFile>
+            <mat-divider style="margin: 10px;"></mat-divider>
+        </mat-list>
+    </mat-card-content>
+</mat-card>

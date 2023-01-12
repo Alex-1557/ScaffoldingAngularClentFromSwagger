@@ -1,0 +1,43 @@
+ <form [formGroup]="form" (ngSubmit)="LoadFile_Submit()">
+  <mat-form-field>
+    <mat-label>vmName (string):</mat-label>
+    <!-- KvmVm/LoadFile -->
+    <input matInput formControlName="LoadFile_vmName" required placeholder="">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>vmConnectionAdminDecryptPass (string):</mat-label>
+    <!-- KvmVm/LoadFile -->
+    <input matInput formControlName="LoadFile_vmConnectionAdminDecryptPass"
+      required placeholder="">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>tableName (string):</mat-label>
+    <!-- KvmVm/LoadFile -->
+    <input matInput formControlName="LoadFile_tableName" required
+      placeholder="">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>fileName (string):</mat-label>
+    <!-- KvmVm/LoadFile -->
+    <input matInput formControlName="LoadFile_fileName" required placeholder="">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>columnName (string):</mat-label>
+    <!-- KvmVm/LoadFile -->
+    <input matInput formControlName="LoadFile_columnName" required
+      placeholder="">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>recordNum (integer):</mat-label>
+    <!-- KvmVm/LoadFile -->
+    <input matInput formControlName="LoadFile_recordNum" required
+      placeholder="">
+  </mat-form-field>
+
+  <div>
+    <button mat-mini-fab color="primary" type="submit">
+      <mat-icon>check icon</mat-icon>
+    </button>
+  </div>
+</form>
+<div id="LoadFile_Result"></div>

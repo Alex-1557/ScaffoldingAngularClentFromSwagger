@@ -1,0 +1,34 @@
+ <form [formGroup]="form" (ngSubmit)="AttachToContainerByDocker_Submit()">
+  <mat-form-field>
+    <mat-label>dockerHubI (integer):</mat-label>
+    <!-- Container/AttachToContainerByDocker -->
+    <input matInput formControlName="AttachToContainerByDocker_dockerHubI"
+      required placeholder="">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>dockerHubDecryptPass (string):</mat-label>
+    <!-- Container/AttachToContainerByDocker -->
+    <input matInput
+      formControlName="AttachToContainerByDocker_dockerHubDecryptPass" required
+      placeholder="">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>containerID (string):</mat-label>
+    <!-- Container/AttachToContainerByDocker -->
+    <input matInput formControlName="AttachToContainerByDocker_containerID"
+      required placeholder="">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>cmd (array):</mat-label>
+    <!-- Container/AttachToContainerByDocker -->
+    <input matInput formControlName="AttachToContainerByDocker_cmd" required
+      placeholder="">
+  </mat-form-field>
+
+  <div>
+    <button mat-mini-fab color="primary" type="submit">
+      <mat-icon>check icon</mat-icon>
+    </button>
+  </div>
+</form>
+<div id="AttachToContainerByDocker_Result"></div>

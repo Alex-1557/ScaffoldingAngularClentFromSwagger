@@ -1,0 +1,33 @@
+ <form [formGroup]="form" (ngSubmit)="CopyTemplate2_Submit()">
+  <mat-form-field>
+    <mat-label>serverI (integer):</mat-label>
+    <!-- KvmDeployVm/CopyTemplate2 -->
+    <input matInput formControlName="CopyTemplate2_serverI" required
+      placeholder="">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>serverDecryptPass (string):</mat-label>
+    <!-- KvmDeployVm/CopyTemplate2 -->
+    <input matInput formControlName="CopyTemplate2_serverDecryptPass" required
+      placeholder="">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>coinName (string):</mat-label>
+    <!-- KvmDeployVm/CopyTemplate2 -->
+    <input matInput formControlName="CopyTemplate2_coinName" required
+      placeholder="">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>kvmDevice (string):</mat-label>
+    <!-- KvmDeployVm/CopyTemplate2 -->
+    <input matInput formControlName="CopyTemplate2_kvmDevice" required
+      placeholder="">
+  </mat-form-field>
+
+  <div>
+    <button mat-mini-fab color="primary" type="submit">
+      <mat-icon>check icon</mat-icon>
+    </button>
+  </div>
+</form>
+<div id="CopyTemplate2_Result"></div>

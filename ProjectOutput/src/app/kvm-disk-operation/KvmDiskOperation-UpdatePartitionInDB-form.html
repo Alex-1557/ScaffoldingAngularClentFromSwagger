@@ -1,0 +1,21 @@
+ <form [formGroup]="form" (ngSubmit)="UpdatePartitionInDB_Submit()">
+  <mat-form-field>
+    <mat-label>serverI (integer):</mat-label>
+    <!-- KvmDiskOperation/UpdatePartitionInDB -->
+    <input matInput formControlName="UpdatePartitionInDB_serverI" required
+      placeholder="">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>serverDecryptPass (string):</mat-label>
+    <!-- KvmDiskOperation/UpdatePartitionInDB -->
+    <input matInput formControlName="UpdatePartitionInDB_serverDecryptPass"
+      required placeholder="">
+  </mat-form-field>
+
+  <div>
+    <button mat-mini-fab color="primary" type="submit">
+      <mat-icon>check icon</mat-icon>
+    </button>
+  </div>
+</form>
+<div id="UpdatePartitionInDB_Result"></div>

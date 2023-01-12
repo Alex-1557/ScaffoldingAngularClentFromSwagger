@@ -1,0 +1,100 @@
+<mat-card>
+    <mat-card-header>
+        <mat-card-title>Server disk operation</mat-card-title>
+    </mat-card-header>
+    <mat-card-content>
+        <mat-list class="mat-small" style="margin: 10px;">
+            (User) 1. <u>DeletePartitionFromServer</u> : "OK. Working with server
+            runtime
+            environment."
+            <br>
+            <app-KvmDiskOperationDeletePartitionFromServer></app-KvmDiskOperationDeletePartitionFromServer>
+            <mat-divider style="margin: 10px;"></mat-divider>
+            (User) 2. <u>DeletePartitionFromDB</u> : "OK. Working with DB only."
+            <br>
+            <app-KvmDiskOperationDeletePartitionFromDB></app-KvmDiskOperationDeletePartitionFromDB>
+            <mat-divider style="margin: 10px;"></mat-divider>
+            (User) 3. <u>DeleteVolumeFromDB</u> : "OK. Working with DB only."
+            <br>
+            <app-KvmDiskOperationDeleteVolumeFromDB></app-KvmDiskOperationDeleteVolumeFromDB>
+            <mat-divider style="margin: 10px;"></mat-divider>
+            (User) 4. <u>AddPartitionToServer</u> : "OK. Working with server runtime
+            environment."
+            <br>
+            <app-KvmDiskOperationAddPartitionToServer></app-KvmDiskOperationAddPartitionToServer>
+            <mat-divider style="margin: 10px;"></mat-divider>
+            (User) 5. <u>AddPartitionToDB</u> : "OK. Working with DB only."
+            <br>
+            <app-KvmDiskOperationAddPartitionToDB></app-KvmDiskOperationAddPartitionToDB>
+            <mat-divider style="margin: 10px;"></mat-divider>
+            (User) 6. <u>FormatPartition</u> : "OK. Working with server runtime
+            environment."
+            <br>
+            <app-KvmDiskOperationFormatPartition></app-KvmDiskOperationFormatPartition>
+            <mat-divider style="margin: 10px;"></mat-divider>
+            (User) 7. <u>ListDevicePartition</u> : "OK. Working with server runtime
+            environment."
+            <br>
+            <app-KvmDiskOperationListDevicePartition></app-KvmDiskOperationListDevicePartition>
+            <mat-divider style="margin: 10px;"></mat-divider>
+            (User) 8. <u>GetFreeDevicePartitionName</u> : "OK. Working with server
+            runtime environment."
+            <br>
+            <app-KvmDiskOperationGetFreeDevicePartitionName></app-KvmDiskOperationGetFreeDevicePartitionName>
+            <mat-divider style="margin: 10px;"></mat-divider>
+            (Admin) 9. <u>ListDiskDevice</u> : "OK. Working with server runtime
+            environment."
+            <br>
+            <app-KvmDiskOperationListDiskDevice></app-KvmDiskOperationListDiskDevice>
+            <mat-divider style="margin: 10px;"></mat-divider>
+            (Admin) 10. <u>ListLvmDevice</u> : "OK. Working with server runtime
+            environment."
+            <br>
+            <app-KvmDiskOperationListLvmDevice></app-KvmDiskOperationListLvmDevice>
+            <mat-divider style="margin: 10px;"></mat-divider>
+            (Admin) 11. <u>ListLvmMember</u> : "OK. Working with server runtime
+            environment."
+            <br>
+            <app-KvmDiskOperationListLvmMember></app-KvmDiskOperationListLvmMember>
+            <mat-divider style="margin: 10px;"></mat-divider>
+            (User) 12. <u>UpdatePartitionInDB</u> : "OK. Working with server runtime
+            environment and DB."
+            <br>
+            <app-KvmDiskOperationUpdatePartitionInDB></app-KvmDiskOperationUpdatePartitionInDB>
+            <mat-divider style="margin: 10px;"></mat-divider>
+            (User) 13. <u>ListDirectory</u> : "OK. Working with server runtime
+            environment."
+            <br>
+            <app-KvmDiskOperationListDirectory></app-KvmDiskOperationListDirectory>
+            <mat-divider style="margin: 10px;"></mat-divider>
+            (User) 14. <u>GetServerPartitions</u> : "OK. Working with DB only."
+            <br>
+            <app-KvmDiskOperationGetServerPartitions></app-KvmDiskOperationGetServerPartitions>
+            <mat-divider style="margin: 10px;"></mat-divider>
+            (Admin) 15. <u>GetFreeServerPartitions</u> : "OK. Working with DB only."
+            <br>
+            <app-KvmDiskOperationGetFreeServerPartitions></app-KvmDiskOperationGetFreeServerPartitions>
+            <mat-divider style="margin: 10px;"></mat-divider>
+            (User) 16. <u>AddKvmVolumeToServer</u> : "API not found."
+            <br>
+            <app-KvmDiskOperationAddKvmVolumeToServer></app-KvmDiskOperationAddKvmVolumeToServer>
+            <mat-divider style="margin: 10px;"></mat-divider>
+            (User) 17. <u>AddKvmVolumeToDb</u> : "API not found."
+            <br>
+            <app-KvmDiskOperationAddKvmVolumeToDb></app-KvmDiskOperationAddKvmVolumeToDb>
+            <mat-divider style="margin: 10px;"></mat-divider>
+            (Admin) 18. <u>SyncKvmVolume</u> : "API not found."
+            <br>
+            <app-KvmDiskOperationSyncKvmVolume></app-KvmDiskOperationSyncKvmVolume>
+            <mat-divider style="margin: 10px;"></mat-divider>
+            (Admin) 19. <u>KvmStorageList</u> : "API not found."
+            <br>
+            <app-KvmDiskOperationKvmStorageList></app-KvmDiskOperationKvmStorageList>
+            <mat-divider style="margin: 10px;"></mat-divider>
+            (Admin) 20. <u>KvmVmPoolList</u> : "API not found."
+            <br>
+            <app-KvmDiskOperationKvmVmPoolList></app-KvmDiskOperationKvmVmPoolList>
+            <mat-divider style="margin: 10px;"></mat-divider>
+        </mat-list>
+    </mat-card-content>
+</mat-card>

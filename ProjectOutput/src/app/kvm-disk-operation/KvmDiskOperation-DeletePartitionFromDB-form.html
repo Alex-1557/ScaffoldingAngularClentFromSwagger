@@ -1,0 +1,15 @@
+ <form [formGroup]="form" (ngSubmit)="DeletePartitionFromDB_Submit()">
+  <mat-form-field>
+    <mat-label>PartitionI (integer):</mat-label>
+    <!-- KvmDiskOperation/DeletePartitionFromDB -->
+    <input matInput formControlName="DeletePartitionFromDB_PartitionI" required
+      placeholder="">
+  </mat-form-field>
+
+  <div>
+    <button mat-mini-fab color="primary" type="submit">
+      <mat-icon>check icon</mat-icon>
+    </button>
+  </div>
+</form>
+<div id="DeletePartitionFromDB_Result"></div>

@@ -1,0 +1,52 @@
+<mat-card>
+    <mat-card-header>
+        <mat-card-title>Docker Hub operation</mat-card-title>
+    </mat-card-header>
+    <mat-card-content>
+        <mat-list class="mat-small" style="margin: 10px;">
+            (Admin) 1. <u>GetDockerHostList</u> : "OK. Working with DB only."
+            <br>
+            <app-DockerGetDockerHostList></app-DockerGetDockerHostList>
+            <mat-divider style="margin: 10px;"></mat-divider>
+            (Admin) 2. <u>GetDockerHubDbInfo</u> : "OK. Working with DB only."
+            <br>
+            <app-DockerGetDockerHubDbInfo></app-DockerGetDockerHubDbInfo>
+            <mat-divider style="margin: 10px;"></mat-divider>
+            (Admin) 3. <u>UpdateDockerHubDbConfigInfo</u> : "OK. Working with VM
+            runtime."
+            <br>
+            <app-DockerUpdateDockerHubDbConfigInfo></app-DockerUpdateDockerHubDbConfigInfo>
+            <mat-divider style="margin: 10px;"></mat-divider>
+            (Admin) 4. <u>GetDockerHubRuntimeInfo</u> : "OK. Working with DB only."
+            <br>
+            <app-DockerGetDockerHubRuntimeInfo></app-DockerGetDockerHubRuntimeInfo>
+            <mat-divider style="margin: 10px;"></mat-divider>
+            (Admin) 5. <u>UpdateDockerHubInfo</u> : "OK. Working with Db And VM/Server
+            runtime
+            environment."
+            <br>
+            <app-DockerUpdateDockerHubInfo></app-DockerUpdateDockerHubInfo>
+            <mat-divider style="margin: 10px;"></mat-divider>
+            (Admin) 6. <u>GetDockerServiceLog</u> : "OK. Finished. Working with Bash."
+            <br>
+            <app-DockerGetDockerServiceLog></app-DockerGetDockerServiceLog>
+            <mat-divider style="margin: 10px;"></mat-divider>
+            (Admin) 7. <u>GetDockerInfo</u> : "OK. Finished. Working with DockerAPI."
+            <br>
+            <app-DockerGetDockerInfo></app-DockerGetDockerInfo>
+            <mat-divider style="margin: 10px;"></mat-divider>
+            (Admin) 8. <u>GetDockerEvents</u> : "DockerAPI don't working."
+            <br>
+            <app-DockerGetDockerEvents></app-DockerGetDockerEvents>
+            <mat-divider style="margin: 10px;"></mat-divider>
+            (Admin) 9. <u>DeleteDockerHubFromDb</u> : "API not found."
+            <br>
+            <app-DockerDeleteDockerHubFromDb></app-DockerDeleteDockerHubFromDb>
+            <mat-divider style="margin: 10px;"></mat-divider>
+            (Admin) 10. <u>AddDockerHubInfoToDb</u> : "API not found."
+            <br>
+            <app-DockerAddDockerHubInfoToDb></app-DockerAddDockerHubInfoToDb>
+            <mat-divider style="margin: 10px;"></mat-divider>
+        </mat-list>
+    </mat-card-content>
+</mat-card>

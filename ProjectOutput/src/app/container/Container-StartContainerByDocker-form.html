@@ -1,0 +1,53 @@
+ <form [formGroup]="form" (ngSubmit)="StartContainerByDocker_Submit()">
+  <mat-form-field>
+    <mat-label>vmConnectionAdminDecryptPass (string):</mat-label>
+    <!-- Container/StartContainerByDocker -->
+    <input matInput
+      formControlName="StartContainerByDocker_vmConnectionAdminDecryptPass"
+      required placeholder="">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>dockerHubDecryptPass (string):</mat-label>
+    <!-- Container/StartContainerByDocker -->
+    <input matInput
+      formControlName="StartContainerByDocker_dockerHubDecryptPass" required
+      placeholder="">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>toDockerHub (integer):</mat-label>
+    <!-- Container/StartContainerByDocker -->
+    <input matInput formControlName="StartContainerByDocker_toDockerHub"
+      required placeholder="">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>toDockerRegistry (integer):</mat-label>
+    <!-- Container/StartContainerByDocker -->
+    <input matInput formControlName="StartContainerByDocker_toDockerRegistry"
+      required placeholder="">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>toCoin (integer):</mat-label>
+    <!-- Container/StartContainerByDocker -->
+    <input matInput formControlName="StartContainerByDocker_toCoin" required
+      placeholder="">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>toUser (integer):</mat-label>
+    <!-- Container/StartContainerByDocker -->
+    <input matInput formControlName="StartContainerByDocker_toUser" required
+      placeholder="">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>containerID (string):</mat-label>
+    <!-- Container/StartContainerByDocker -->
+    <input matInput formControlName="StartContainerByDocker_containerID"
+      required placeholder="">
+  </mat-form-field>
+
+  <div>
+    <button mat-mini-fab color="primary" type="submit">
+      <mat-icon>check icon</mat-icon>
+    </button>
+  </div>
+</form>
+<div id="StartContainerByDocker_Result"></div>

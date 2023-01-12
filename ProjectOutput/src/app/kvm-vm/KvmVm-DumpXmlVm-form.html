@@ -1,0 +1,25 @@
+ <form [formGroup]="form" (ngSubmit)="DumpXmlVm_Submit()">
+  <mat-form-field>
+    <mat-label>serverI (integer):</mat-label>
+    <!-- KvmVm/DumpXmlVm -->
+    <input matInput formControlName="DumpXmlVm_serverI" required placeholder="">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>serverDecryptPass (string):</mat-label>
+    <!-- KvmVm/DumpXmlVm -->
+    <input matInput formControlName="DumpXmlVm_serverDecryptPass" required
+      placeholder="">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>vmName (string):</mat-label>
+    <!-- KvmVm/DumpXmlVm -->
+    <input matInput formControlName="DumpXmlVm_vmName" required placeholder="">
+  </mat-form-field>
+
+  <div>
+    <button mat-mini-fab color="primary" type="submit">
+      <mat-icon>check icon</mat-icon>
+    </button>
+  </div>
+</form>
+<div id="DumpXmlVm_Result"></div>

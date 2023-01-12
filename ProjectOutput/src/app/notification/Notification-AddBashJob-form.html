@@ -1,0 +1,49 @@
+ <form [formGroup]="form" (ngSubmit)="AddBashJob_Submit()">
+  <mat-form-field>
+    <mat-label>toServer (integer):</mat-label>
+    <!-- Notification/AddBashJob -->
+    <input matInput formControlName="AddBashJob_toServer" required
+      placeholder="">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>toVm (integer):</mat-label>
+    <!-- Notification/AddBashJob -->
+    <input matInput formControlName="AddBashJob_toVm" required placeholder="">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>sshDecryptPass (string):</mat-label>
+    <!-- Notification/AddBashJob -->
+    <input matInput formControlName="AddBashJob_sshDecryptPass" required
+      placeholder="">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>subscribeId (string):</mat-label>
+    <!-- Notification/AddBashJob -->
+    <input matInput formControlName="AddBashJob_subscribeId" required
+      placeholder="">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>toUser (integer):</mat-label>
+    <!-- Notification/AddBashJob -->
+    <input matInput formControlName="AddBashJob_toUser" required placeholder="">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>command (string):</mat-label>
+    <!-- Notification/AddBashJob -->
+    <input matInput formControlName="AddBashJob_command" required
+      placeholder="">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>comment (string):</mat-label>
+    <!-- Notification/AddBashJob -->
+    <input matInput formControlName="AddBashJob_comment" required
+      placeholder="">
+  </mat-form-field>
+
+  <div>
+    <button mat-mini-fab color="primary" type="submit">
+      <mat-icon>check icon</mat-icon>
+    </button>
+  </div>
+</form>
+<div id="AddBashJob_Result"></div>

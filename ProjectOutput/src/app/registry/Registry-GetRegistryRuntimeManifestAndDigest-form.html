@@ -1,0 +1,37 @@
+ <form [formGroup]="form"
+  (ngSubmit)="GetRegistryRuntimeManifestAndDigest_Submit()">
+  <mat-form-field>
+    <mat-label>dockerRegistryVmI (integer):</mat-label>
+    <!-- Registry/GetRegistryRuntimeManifestAndDigest -->
+    <input matInput
+      formControlName="GetRegistryRuntimeManifestAndDigest_dockerRegistryVmI"
+      required placeholder="">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>dockerRegistryDecryptPass (string):</mat-label>
+    <!-- Registry/GetRegistryRuntimeManifestAndDigest -->
+    <input matInput
+      formControlName="GetRegistryRuntimeManifestAndDigest_dockerRegistryDecryptPass"
+      required placeholder="">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>repository (string):</mat-label>
+    <!-- Registry/GetRegistryRuntimeManifestAndDigest -->
+    <input matInput
+      formControlName="GetRegistryRuntimeManifestAndDigest_repository" required
+      placeholder="">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>tag (string):</mat-label>
+    <!-- Registry/GetRegistryRuntimeManifestAndDigest -->
+    <input matInput formControlName="GetRegistryRuntimeManifestAndDigest_tag"
+      required placeholder="">
+  </mat-form-field>
+
+  <div>
+    <button mat-mini-fab color="primary" type="submit">
+      <mat-icon>check icon</mat-icon>
+    </button>
+  </div>
+</form>
+<div id="GetRegistryRuntimeManifestAndDigest_Result"></div>

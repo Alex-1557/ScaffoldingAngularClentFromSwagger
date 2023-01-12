@@ -1,0 +1,28 @@
+ <form [formGroup]="form" (ngSubmit)="GetDockerServiceLog_Submit()">
+  <mat-form-field>
+    <mat-label>dockerHubI (integer):</mat-label>
+    <!-- Docker/GetDockerServiceLog -->
+    <input matInput formControlName="GetDockerServiceLog_dockerHubI" required
+      placeholder="">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>vmConnectionAdminDecryptPass (string):</mat-label>
+    <!-- Docker/GetDockerServiceLog -->
+    <input matInput
+      formControlName="GetDockerServiceLog_vmConnectionAdminDecryptPass"
+      required placeholder="">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>readRecords (integer):</mat-label>
+    <!-- Docker/GetDockerServiceLog -->
+    <input matInput formControlName="GetDockerServiceLog_readRecords" required
+      placeholder="">
+  </mat-form-field>
+
+  <div>
+    <button mat-mini-fab color="primary" type="submit">
+      <mat-icon>check icon</mat-icon>
+    </button>
+  </div>
+</form>
+<div id="GetDockerServiceLog_Result"></div>

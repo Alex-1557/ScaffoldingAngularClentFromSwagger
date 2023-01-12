@@ -1,0 +1,57 @@
+ <form [formGroup]="form" (ngSubmit)="AddMasterNodeToDb8_Submit()">
+  <mat-form-field>
+    <mat-label>toVm (integer):</mat-label>
+    <!-- KvmDeployVm/AddMasterNodeToDb8 -->
+    <input matInput formControlName="AddMasterNodeToDb8_toVm" required
+      placeholder="">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>toVmUser (integer):</mat-label>
+    <!-- KvmDeployVm/AddMasterNodeToDb8 -->
+    <input matInput formControlName="AddMasterNodeToDb8_toVmUser" required
+      placeholder="">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>toUser (integer):</mat-label>
+    <!-- KvmDeployVm/AddMasterNodeToDb8 -->
+    <input matInput formControlName="AddMasterNodeToDb8_toUser" required
+      placeholder="">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>toCoin (integer):</mat-label>
+    <!-- KvmDeployVm/AddMasterNodeToDb8 -->
+    <input matInput formControlName="AddMasterNodeToDb8_toCoin" required
+      placeholder="">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>configPath (string):</mat-label>
+    <!-- KvmDeployVm/AddMasterNodeToDb8 -->
+    <input matInput formControlName="AddMasterNodeToDb8_configPath" required
+      placeholder="">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>statusCommand (string):</mat-label>
+    <!-- KvmDeployVm/AddMasterNodeToDb8 -->
+    <input matInput formControlName="AddMasterNodeToDb8_statusCommand" required
+      placeholder="">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>config (string):</mat-label>
+    <!-- KvmDeployVm/AddMasterNodeToDb8 -->
+    <input matInput formControlName="AddMasterNodeToDb8_config" required
+      placeholder="">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>comment (string):</mat-label>
+    <!-- KvmDeployVm/AddMasterNodeToDb8 -->
+    <input matInput formControlName="AddMasterNodeToDb8_comment" required
+      placeholder="">
+  </mat-form-field>
+
+  <div>
+    <button mat-mini-fab color="primary" type="submit">
+      <mat-icon>check icon</mat-icon>
+    </button>
+  </div>
+</form>
+<div id="AddMasterNodeToDb8_Result"></div>

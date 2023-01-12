@@ -1,0 +1,16 @@
+ <form [formGroup]="form" (ngSubmit)="LoadRegistryImageToDb_Submit()">
+  <mat-form-field>
+    <mat-label>LoadRegistryImageToDbRequest (object):</mat-label>
+    <!-- Registry/LoadRegistryImageToDb -->
+    <input matInput
+      formControlName="LoadRegistryImageToDb_LoadRegistryImageToDbRequest"
+      required placeholder="">
+  </mat-form-field>
+
+  <div>
+    <button mat-mini-fab color="primary" type="submit">
+      <mat-icon>check icon</mat-icon>
+    </button>
+  </div>
+</form>
+<div id="LoadRegistryImageToDb_Result"></div>

@@ -1,0 +1,27 @@
+ <form [formGroup]="form" (ngSubmit)="GetRuntimeBridgePorts_Submit()">
+  <mat-form-field>
+    <mat-label>serverI (integer):</mat-label>
+    <!-- KvmIp/GetRuntimeBridgePorts -->
+    <input matInput formControlName="GetRuntimeBridgePorts_serverI" required
+      placeholder="">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>serverDecryptPass (string):</mat-label>
+    <!-- KvmIp/GetRuntimeBridgePorts -->
+    <input matInput formControlName="GetRuntimeBridgePorts_serverDecryptPass"
+      required placeholder="">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>bridgeName (string):</mat-label>
+    <!-- KvmIp/GetRuntimeBridgePorts -->
+    <input matInput formControlName="GetRuntimeBridgePorts_bridgeName" required
+      placeholder="">
+  </mat-form-field>
+
+  <div>
+    <button mat-mini-fab color="primary" type="submit">
+      <mat-icon>check icon</mat-icon>
+    </button>
+  </div>
+</form>
+<div id="GetRuntimeBridgePorts_Result"></div>

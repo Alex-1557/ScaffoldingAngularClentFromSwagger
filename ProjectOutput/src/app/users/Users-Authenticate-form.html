@@ -1,0 +1,21 @@
+ <form [formGroup]="form" (ngSubmit)="Authenticate_Submit()">
+  <mat-form-field>
+    <mat-label>username (string):</mat-label>
+    <!-- Users/Authenticate -->
+    <input matInput formControlName="Authenticate_username" required
+      placeholder="">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>password (string):</mat-label>
+    <!-- Users/Authenticate -->
+    <input matInput formControlName="Authenticate_password" required
+      placeholder="">
+  </mat-form-field>
+
+  <div>
+    <button mat-mini-fab color="primary" type="submit">
+      <mat-icon>check icon</mat-icon>
+    </button>
+  </div>
+</form>
+<div id="Authenticate_Result"></div>

@@ -1,0 +1,17 @@
+﻿import { Injectable } from '@angular/core';
+import { HttpClient, HttpParams, HttpParamsOptions, HttpParameterCodec } from '@angular/common/http';
+import { Observable, Subject, tap } from 'rxjs';
+^#
+
+@Injectable({
+    providedIn: 'root',
+})
+
+export class ~Service {
+
+    constructor(
+        protected http: HttpClient) {
+    }
+
+    ^%
+}

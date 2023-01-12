@@ -1,0 +1,14 @@
+ <form [formGroup]="form" (ngSubmit)="PoolInfo_Submit()">
+  <mat-form-field>
+    <mat-label>ServerI (integer):</mat-label>
+    <!-- KvmInfo/PoolInfo -->
+    <input matInput formControlName="PoolInfo_ServerI" required placeholder="">
+  </mat-form-field>
+
+  <div>
+    <button mat-mini-fab color="primary" type="submit">
+      <mat-icon>check icon</mat-icon>
+    </button>
+  </div>
+</form>
+<div id="PoolInfo_Result"></div>

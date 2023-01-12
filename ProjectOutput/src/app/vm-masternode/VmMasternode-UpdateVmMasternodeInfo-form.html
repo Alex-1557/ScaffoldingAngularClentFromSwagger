@@ -1,0 +1,40 @@
+ <form [formGroup]="form" (ngSubmit)="UpdateVmMasternodeInfo_Submit()">
+  <mat-form-field>
+    <mat-label>serverI (integer):</mat-label>
+    <!-- VmMasternode/UpdateVmMasternodeInfo -->
+    <input matInput formControlName="UpdateVmMasternodeInfo_serverI" required
+      placeholder="">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>serverDecryptPass (string):</mat-label>
+    <!-- VmMasternode/UpdateVmMasternodeInfo -->
+    <input matInput formControlName="UpdateVmMasternodeInfo_serverDecryptPass"
+      required placeholder="">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>vmName (string):</mat-label>
+    <!-- VmMasternode/UpdateVmMasternodeInfo -->
+    <input matInput formControlName="UpdateVmMasternodeInfo_vmName" required
+      placeholder="">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>vmConnectionAdminDecryptPass (string):</mat-label>
+    <!-- VmMasternode/UpdateVmMasternodeInfo -->
+    <input matInput
+      formControlName="UpdateVmMasternodeInfo_vmConnectionAdminDecryptPass"
+      required placeholder="">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>masternodeI (integer):</mat-label>
+    <!-- VmMasternode/UpdateVmMasternodeInfo -->
+    <input matInput formControlName="UpdateVmMasternodeInfo_masternodeI"
+      required placeholder="">
+  </mat-form-field>
+
+  <div>
+    <button mat-mini-fab color="primary" type="submit">
+      <mat-icon>check icon</mat-icon>
+    </button>
+  </div>
+</form>
+<div id="UpdateVmMasternodeInfo_Result"></div>

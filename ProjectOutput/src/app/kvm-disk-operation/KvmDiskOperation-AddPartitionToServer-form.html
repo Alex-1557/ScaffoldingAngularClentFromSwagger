@@ -1,0 +1,39 @@
+ <form [formGroup]="form" (ngSubmit)="AddPartitionToServer_Submit()">
+  <mat-form-field>
+    <mat-label>serverI (integer):</mat-label>
+    <!-- KvmDiskOperation/AddPartitionToServer -->
+    <input matInput formControlName="AddPartitionToServer_serverI" required
+      placeholder="">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>serverDecryptPass (string):</mat-label>
+    <!-- KvmDiskOperation/AddPartitionToServer -->
+    <input matInput formControlName="AddPartitionToServer_serverDecryptPass"
+      required placeholder="">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>serverDevice (string):</mat-label>
+    <!-- KvmDiskOperation/AddPartitionToServer -->
+    <input matInput formControlName="AddPartitionToServer_serverDevice" required
+      placeholder="">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>startTrack (integer):</mat-label>
+    <!-- KvmDiskOperation/AddPartitionToServer -->
+    <input matInput formControlName="AddPartitionToServer_startTrack" required
+      placeholder="">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>endTrack (integer):</mat-label>
+    <!-- KvmDiskOperation/AddPartitionToServer -->
+    <input matInput formControlName="AddPartitionToServer_endTrack" required
+      placeholder="">
+  </mat-form-field>
+
+  <div>
+    <button mat-mini-fab color="primary" type="submit">
+      <mat-icon>check icon</mat-icon>
+    </button>
+  </div>
+</form>
+<div id="AddPartitionToServer_Result"></div>

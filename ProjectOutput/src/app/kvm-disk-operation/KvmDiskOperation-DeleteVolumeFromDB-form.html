@@ -1,0 +1,21 @@
+ <form [formGroup]="form" (ngSubmit)="DeleteVolumeFromDB_Submit()">
+  <mat-form-field>
+    <mat-label>path (string):</mat-label>
+    <!-- KvmDiskOperation/DeleteVolumeFromDB -->
+    <input matInput formControlName="DeleteVolumeFromDB_path" required
+      placeholder="">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>withKvmDevicePartition (boolean):</mat-label>
+    <!-- KvmDiskOperation/DeleteVolumeFromDB -->
+    <input matInput formControlName="DeleteVolumeFromDB_withKvmDevicePartition"
+      required placeholder="">
+  </mat-form-field>
+
+  <div>
+    <button mat-mini-fab color="primary" type="submit">
+      <mat-icon>check icon</mat-icon>
+    </button>
+  </div>
+</form>
+<div id="DeleteVolumeFromDB_Result"></div>

@@ -1,0 +1,45 @@
+ <form [formGroup]="form" (ngSubmit)="AddRegistryInfoToDb_Submit()">
+  <mat-form-field>
+    <mat-label>toDockerRegistry (integer):</mat-label>
+    <!-- Registry/AddRegistryInfoToDb -->
+    <input matInput formControlName="AddRegistryInfoToDb_toDockerRegistry"
+      required placeholder="">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>toCoin (integer):</mat-label>
+    <!-- Registry/AddRegistryInfoToDb -->
+    <input matInput formControlName="AddRegistryInfoToDb_toCoin" required
+      placeholder="">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>registryImageName (string):</mat-label>
+    <!-- Registry/AddRegistryInfoToDb -->
+    <input matInput formControlName="AddRegistryInfoToDb_registryImageName"
+      required placeholder="">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>tag (string):</mat-label>
+    <!-- Registry/AddRegistryInfoToDb -->
+    <input matInput formControlName="AddRegistryInfoToDb_tag" required
+      placeholder="">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>digest (string):</mat-label>
+    <!-- Registry/AddRegistryInfoToDb -->
+    <input matInput formControlName="AddRegistryInfoToDb_digest" required
+      placeholder="">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>manifestContent (string):</mat-label>
+    <!-- Registry/AddRegistryInfoToDb -->
+    <input matInput formControlName="AddRegistryInfoToDb_manifestContent"
+      required placeholder="">
+  </mat-form-field>
+
+  <div>
+    <button mat-mini-fab color="primary" type="submit">
+      <mat-icon>check icon</mat-icon>
+    </button>
+  </div>
+</form>
+<div id="AddRegistryInfoToDb_Result"></div>

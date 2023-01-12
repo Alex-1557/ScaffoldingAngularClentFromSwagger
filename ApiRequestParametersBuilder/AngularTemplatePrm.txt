@@ -1,0 +1,5 @@
+﻿    <mat-form-field>
+      <mat-label>$ (*):</mat-label>
+      <!-- ~/@@ -->
+      <input matInput formControlName="#" required placeholder="">     
+    </mat-form-field>

@@ -1,0 +1,15 @@
+ <form [formGroup]="form" (ngSubmit)="FlushAllNotificationForOneUser_Submit()">
+  <mat-form-field>
+    <mat-label>UserID (integer):</mat-label>
+    <!-- Notification/FlushAllNotificationForOneUser -->
+    <input matInput formControlName="FlushAllNotificationForOneUser_UserID"
+      required placeholder="">
+  </mat-form-field>
+
+  <div>
+    <button mat-mini-fab color="primary" type="submit">
+      <mat-icon>check icon</mat-icon>
+    </button>
+  </div>
+</form>
+<div id="FlushAllNotificationForOneUser_Result"></div>

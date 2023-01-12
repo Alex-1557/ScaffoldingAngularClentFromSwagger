@@ -1,0 +1,23 @@
+ <form [formGroup]="form" (ngSubmit)="GetRegistryRuntimeFullContent_Submit()">
+  <mat-form-field>
+    <mat-label>dockerRegistryVmI (integer):</mat-label>
+    <!-- Registry/GetRegistryRuntimeFullContent -->
+    <input matInput
+      formControlName="GetRegistryRuntimeFullContent_dockerRegistryVmI" required
+      placeholder="">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>dockerRegistryDecryptPass (string):</mat-label>
+    <!-- Registry/GetRegistryRuntimeFullContent -->
+    <input matInput
+      formControlName="GetRegistryRuntimeFullContent_dockerRegistryDecryptPass"
+      required placeholder="">
+  </mat-form-field>
+
+  <div>
+    <button mat-mini-fab color="primary" type="submit">
+      <mat-icon>check icon</mat-icon>
+    </button>
+  </div>
+</form>
+<div id="GetRegistryRuntimeFullContent_Result"></div>

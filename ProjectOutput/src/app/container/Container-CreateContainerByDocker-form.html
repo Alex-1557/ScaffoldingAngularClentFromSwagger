@@ -1,0 +1,161 @@
+ <form [formGroup]="form" (ngSubmit)="CreateContainerByDocker_Submit()">
+  <mat-form-field>
+    <mat-label>vmConnectionAdminDecryptPass (string):</mat-label>
+    <!-- Container/CreateContainerByDocker -->
+    <input matInput
+      formControlName="CreateContainerByDocker_vmConnectionAdminDecryptPass"
+      required placeholder="">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>dockerHubDecryptPass (string):</mat-label>
+    <!-- Container/CreateContainerByDocker -->
+    <input matInput
+      formControlName="CreateContainerByDocker_dockerHubDecryptPass" required
+      placeholder="">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>toDockerHub (integer):</mat-label>
+    <!-- Container/CreateContainerByDocker -->
+    <input matInput formControlName="CreateContainerByDocker_toDockerHub"
+      required placeholder="">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>toDockerRegistry (integer):</mat-label>
+    <!-- Container/CreateContainerByDocker -->
+    <input matInput formControlName="CreateContainerByDocker_toDockerRegistry"
+      required placeholder="">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>toCoin (integer):</mat-label>
+    <!-- Container/CreateContainerByDocker -->
+    <input matInput formControlName="CreateContainerByDocker_toCoin" required
+      placeholder="">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>toUser (integer):</mat-label>
+    <!-- Container/CreateContainerByDocker -->
+    <input matInput formControlName="CreateContainerByDocker_toUser" required
+      placeholder="">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>hostname (string):</mat-label>
+    <!-- Container/CreateContainerByDocker -->
+    <input matInput formControlName="CreateContainerByDocker_hostname" required
+      placeholder="">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>domainname (string):</mat-label>
+    <!-- Container/CreateContainerByDocker -->
+    <input matInput formControlName="CreateContainerByDocker_domainname"
+      required placeholder="">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>user (string):</mat-label>
+    <!-- Container/CreateContainerByDocker -->
+    <input matInput formControlName="CreateContainerByDocker_user" required
+      placeholder="">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>attachStdin (boolean):</mat-label>
+    <!-- Container/CreateContainerByDocker -->
+    <input matInput formControlName="CreateContainerByDocker_attachStdin"
+      required placeholder="">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>attachStdout (boolean):</mat-label>
+    <!-- Container/CreateContainerByDocker -->
+    <input matInput formControlName="CreateContainerByDocker_attachStdout"
+      required placeholder="">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>attachStderr (boolean):</mat-label>
+    <!-- Container/CreateContainerByDocker -->
+    <input matInput formControlName="CreateContainerByDocker_attachStderr"
+      required placeholder="">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>tty (boolean):</mat-label>
+    <!-- Container/CreateContainerByDocker -->
+    <input matInput formControlName="CreateContainerByDocker_tty" required
+      placeholder="">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>stdinOnce (boolean):</mat-label>
+    <!-- Container/CreateContainerByDocker -->
+    <input matInput formControlName="CreateContainerByDocker_stdinOnce" required
+      placeholder="">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>networkDisabled (boolean):</mat-label>
+    <!-- Container/CreateContainerByDocker -->
+    <input matInput formControlName="CreateContainerByDocker_networkDisabled"
+      required placeholder="">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>env (array):</mat-label>
+    <!-- Container/CreateContainerByDocker -->
+    <input matInput formControlName="CreateContainerByDocker_env" required
+      placeholder="">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>cmd (string):</mat-label>
+    <!-- Container/CreateContainerByDocker -->
+    <input matInput formControlName="CreateContainerByDocker_cmd" required
+      placeholder="">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>entrypoint (string):</mat-label>
+    <!-- Container/CreateContainerByDocker -->
+    <input matInput formControlName="CreateContainerByDocker_entrypoint"
+      required placeholder="">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>image (string):</mat-label>
+    <!-- Container/CreateContainerByDocker -->
+    <input matInput formControlName="CreateContainerByDocker_image" required
+      placeholder="">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>labels (array):</mat-label>
+    <!-- Container/CreateContainerByDocker -->
+    <input matInput formControlName="CreateContainerByDocker_labels" required
+      placeholder="">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>volumes (object):</mat-label>
+    <!-- Container/CreateContainerByDocker -->
+    <input matInput formControlName="CreateContainerByDocker_volumes" required
+      placeholder="">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>workingDir (string):</mat-label>
+    <!-- Container/CreateContainerByDocker -->
+    <input matInput formControlName="CreateContainerByDocker_workingDir"
+      required placeholder="">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>macAddress (string):</mat-label>
+    <!-- Container/CreateContainerByDocker -->
+    <input matInput formControlName="CreateContainerByDocker_macAddress"
+      required placeholder="">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>exposedPorts (object):</mat-label>
+    <!-- Container/CreateContainerByDocker -->
+    <input matInput formControlName="CreateContainerByDocker_exposedPorts"
+      required placeholder="">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>hostConfig (undefined):</mat-label>
+    <!-- Container/CreateContainerByDocker -->
+    <input matInput formControlName="CreateContainerByDocker_hostConfig"
+      required placeholder="">
+  </mat-form-field>
+
+  <div>
+    <button mat-mini-fab color="primary" type="submit">
+      <mat-icon>check icon</mat-icon>
+    </button>
+  </div>
+</form>
+<div id="CreateContainerByDocker_Result"></div>

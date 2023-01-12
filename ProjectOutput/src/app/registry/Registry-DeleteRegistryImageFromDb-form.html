@@ -1,0 +1,21 @@
+ <form [formGroup]="form" (ngSubmit)="DeleteRegistryImageFromDb_Submit()">
+  <mat-form-field>
+    <mat-label>toDockerRegistry (integer):</mat-label>
+    <!-- Registry/DeleteRegistryImageFromDb -->
+    <input matInput formControlName="DeleteRegistryImageFromDb_toDockerRegistry"
+      required placeholder="">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>ImageName (string):</mat-label>
+    <!-- Registry/DeleteRegistryImageFromDb -->
+    <input matInput formControlName="DeleteRegistryImageFromDb_ImageName"
+      required placeholder="">
+  </mat-form-field>
+
+  <div>
+    <button mat-mini-fab color="primary" type="submit">
+      <mat-icon>check icon</mat-icon>
+    </button>
+  </div>
+</form>
+<div id="DeleteRegistryImageFromDb_Result"></div>

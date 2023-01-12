@@ -1,0 +1,33 @@
+ <form [formGroup]="form" (ngSubmit)="AllocatePartition2_Submit()">
+  <mat-form-field>
+    <mat-label>freePart (undefined):</mat-label>
+    <!-- KvmDeployVm/AllocatePartition2 -->
+    <input matInput formControlName="AllocatePartition2_freePart" required
+      placeholder="">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>serverI (integer):</mat-label>
+    <!-- KvmDeployVm/AllocatePartition2 -->
+    <input matInput formControlName="AllocatePartition2_serverI" required
+      placeholder="">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>serverDecryptPass (string):</mat-label>
+    <!-- KvmDeployVm/AllocatePartition2 -->
+    <input matInput formControlName="AllocatePartition2_serverDecryptPass"
+      required placeholder="">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>toCoin (integer):</mat-label>
+    <!-- KvmDeployVm/AllocatePartition2 -->
+    <input matInput formControlName="AllocatePartition2_toCoin" required
+      placeholder="">
+  </mat-form-field>
+
+  <div>
+    <button mat-mini-fab color="primary" type="submit">
+      <mat-icon>check icon</mat-icon>
+    </button>
+  </div>
+</form>
+<div id="AllocatePartition2_Result"></div>

@@ -1,0 +1,27 @@
+ <form [formGroup]="form" (ngSubmit)="ListLvmMember_Submit()">
+  <mat-form-field>
+    <mat-label>serverI (integer):</mat-label>
+    <!-- KvmDiskOperation/ListLvmMember -->
+    <input matInput formControlName="ListLvmMember_serverI" required
+      placeholder="">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>serverDecryptPass (string):</mat-label>
+    <!-- KvmDiskOperation/ListLvmMember -->
+    <input matInput formControlName="ListLvmMember_serverDecryptPass" required
+      placeholder="">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>serverDevice (string):</mat-label>
+    <!-- KvmDiskOperation/ListLvmMember -->
+    <input matInput formControlName="ListLvmMember_serverDevice" required
+      placeholder="">
+  </mat-form-field>
+
+  <div>
+    <button mat-mini-fab color="primary" type="submit">
+      <mat-icon>check icon</mat-icon>
+    </button>
+  </div>
+</form>
+<div id="ListLvmMember_Result"></div>

@@ -1,0 +1,36 @@
+ <form [formGroup]="form" (ngSubmit)="Bash_Submit()">
+  <mat-form-field>
+    <mat-label>vmName (string):</mat-label>
+    <!-- VmOperation/Bash -->
+    <input matInput formControlName="Bash_vmName" required placeholder="">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>vmConnectionAdminDecryptPass (string):</mat-label>
+    <!-- VmOperation/Bash -->
+    <input matInput formControlName="Bash_vmConnectionAdminDecryptPass" required
+      placeholder="">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>bashCmd (string):</mat-label>
+    <!-- VmOperation/Bash -->
+    <input matInput formControlName="Bash_bashCmd" required placeholder="">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>addSudo (boolean):</mat-label>
+    <!-- VmOperation/Bash -->
+    <input matInput formControlName="Bash_addSudo" required placeholder="">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>useAdminLogin (boolean):</mat-label>
+    <!-- VmOperation/Bash -->
+    <input matInput formControlName="Bash_useAdminLogin" required
+      placeholder="">
+  </mat-form-field>
+
+  <div>
+    <button mat-mini-fab color="primary" type="submit">
+      <mat-icon>check icon</mat-icon>
+    </button>
+  </div>
+</form>
+<div id="Bash_Result"></div>

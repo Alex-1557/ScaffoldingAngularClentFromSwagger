@@ -1,0 +1,15 @@
+ <form [formGroup]="form" (ngSubmit)="AddDockerHubInfoToDb_Submit()">
+  <mat-form-field>
+    <mat-label>newDockerJsonInfo (string):</mat-label>
+    <!-- Docker/AddDockerHubInfoToDb -->
+    <input matInput formControlName="AddDockerHubInfoToDb_newDockerJsonInfo"
+      required placeholder="">
+  </mat-form-field>
+
+  <div>
+    <button mat-mini-fab color="primary" type="submit">
+      <mat-icon>check icon</mat-icon>
+    </button>
+  </div>
+</form>
+<div id="AddDockerHubInfoToDb_Result"></div>

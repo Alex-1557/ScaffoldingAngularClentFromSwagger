@@ -1,0 +1,16 @@
+ <form [formGroup]="form" (ngSubmit)="AddNewRegistryServerToDb_Submit()">
+  <mat-form-field>
+    <mat-label>AddNewRegistryServerToDbRequest (object):</mat-label>
+    <!-- Registry/AddNewRegistryServerToDb -->
+    <input matInput
+      formControlName="AddNewRegistryServerToDb_AddNewRegistryServerToDbRequest"
+      required placeholder="">
+  </mat-form-field>
+
+  <div>
+    <button mat-mini-fab color="primary" type="submit">
+      <mat-icon>check icon</mat-icon>
+    </button>
+  </div>
+</form>
+<div id="AddNewRegistryServerToDb_Result"></div>

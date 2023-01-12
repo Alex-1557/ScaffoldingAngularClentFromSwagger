@@ -1,0 +1,14 @@
+ <form [formGroup]="form" (ngSubmit)="GetVlanSwitch_Submit()">
+  <mat-form-field>
+    <mat-label>IP (string):</mat-label>
+    <!-- KvmInfo/GetVlanSwitch -->
+    <input matInput formControlName="GetVlanSwitch_IP" required placeholder="">
+  </mat-form-field>
+
+  <div>
+    <button mat-mini-fab color="primary" type="submit">
+      <mat-icon>check icon</mat-icon>
+    </button>
+  </div>
+</form>
+<div id="GetVlanSwitch_Result"></div>

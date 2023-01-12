@@ -1,0 +1,25 @@
+ <form [formGroup]="form" (ngSubmit)="DoBash_Submit()">
+  <mat-form-field>
+    <mat-label>serverI (integer):</mat-label>
+    <!-- KvmOperation/DoBash -->
+    <input matInput formControlName="DoBash_serverI" required placeholder="">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>serverDecryptPass (string):</mat-label>
+    <!-- KvmOperation/DoBash -->
+    <input matInput formControlName="DoBash_serverDecryptPass" required
+      placeholder="">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>bashCmd (string):</mat-label>
+    <!-- KvmOperation/DoBash -->
+    <input matInput formControlName="DoBash_bashCmd" required placeholder="">
+  </mat-form-field>
+
+  <div>
+    <button mat-mini-fab color="primary" type="submit">
+      <mat-icon>check icon</mat-icon>
+    </button>
+  </div>
+</form>
+<div id="DoBash_Result"></div>

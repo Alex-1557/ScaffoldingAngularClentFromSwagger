@@ -1,0 +1,41 @@
+ <form [formGroup]="form" (ngSubmit)="CheckDecryptPass_Submit()">
+  <mat-form-field>
+    <mat-label>serverDecryptPass (string):</mat-label>
+    <!-- Aes/CheckDecryptPass -->
+    <input matInput formControlName="CheckDecryptPass_serverDecryptPass"
+      required placeholder="">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>vmConnectionAdminDecryptPass (string):</mat-label>
+    <!-- Aes/CheckDecryptPass -->
+    <input matInput
+      formControlName="CheckDecryptPass_vmConnectionAdminDecryptPass" required
+      placeholder="">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>dockerHubDecryptPass (string):</mat-label>
+    <!-- Aes/CheckDecryptPass -->
+    <input matInput formControlName="CheckDecryptPass_dockerHubDecryptPass"
+      required placeholder="">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>dockerRegistryDecryptPass (string):</mat-label>
+    <!-- Aes/CheckDecryptPass -->
+    <input matInput formControlName="CheckDecryptPass_dockerRegistryDecryptPass"
+      required placeholder="">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>vmConnectionUserDecryptPass (string):</mat-label>
+    <!-- Aes/CheckDecryptPass -->
+    <input matInput
+      formControlName="CheckDecryptPass_vmConnectionUserDecryptPass" required
+      placeholder="">
+  </mat-form-field>
+
+  <div>
+    <button mat-mini-fab color="primary" type="submit">
+      <mat-icon>check icon</mat-icon>
+    </button>
+  </div>
+</form>
+<div id="CheckDecryptPass_Result"></div>

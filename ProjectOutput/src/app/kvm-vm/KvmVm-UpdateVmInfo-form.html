@@ -1,0 +1,32 @@
+ <form [formGroup]="form" (ngSubmit)="UpdateVmInfo_Submit()">
+  <mat-form-field>
+    <mat-label>serverI (integer):</mat-label>
+    <!-- KvmVm/UpdateVmInfo -->
+    <input matInput formControlName="UpdateVmInfo_serverI" required
+      placeholder="">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>serverDecryptPass (string):</mat-label>
+    <!-- KvmVm/UpdateVmInfo -->
+    <input matInput formControlName="UpdateVmInfo_serverDecryptPass" required
+      placeholder="">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>vmI (integer):</mat-label>
+    <!-- KvmVm/UpdateVmInfo -->
+    <input matInput formControlName="UpdateVmInfo_vmI" required placeholder="">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>vmConnectionAdminDecryptPass (string):</mat-label>
+    <!-- KvmVm/UpdateVmInfo -->
+    <input matInput formControlName="UpdateVmInfo_vmConnectionAdminDecryptPass"
+      required placeholder="">
+  </mat-form-field>
+
+  <div>
+    <button mat-mini-fab color="primary" type="submit">
+      <mat-icon>check icon</mat-icon>
+    </button>
+  </div>
+</form>
+<div id="UpdateVmInfo_Result"></div>

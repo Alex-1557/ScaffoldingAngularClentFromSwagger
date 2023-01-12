@@ -1,0 +1,31 @@
+ <form [formGroup]="form" (ngSubmit)="ContainerStart_Submit()">
+  <mat-form-field>
+    <mat-label>ID (string):</mat-label>
+    <!-- Notification/ContainerStart -->
+    <input matInput formControlName="ContainerStart_ID" required placeholder="">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>name (string):</mat-label>
+    <!-- Notification/ContainerStart -->
+    <input matInput formControlName="ContainerStart_name" required
+      placeholder="">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Time (string):</mat-label>
+    <!-- Notification/ContainerStart -->
+    <input matInput formControlName="ContainerStart_Time" required
+      placeholder="">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>N (integer):</mat-label>
+    <!-- Notification/ContainerStart -->
+    <input matInput formControlName="ContainerStart_N" required placeholder="">
+  </mat-form-field>
+
+  <div>
+    <button mat-mini-fab color="primary" type="submit">
+      <mat-icon>check icon</mat-icon>
+    </button>
+  </div>
+</form>
+<div id="ContainerStart_Result"></div>

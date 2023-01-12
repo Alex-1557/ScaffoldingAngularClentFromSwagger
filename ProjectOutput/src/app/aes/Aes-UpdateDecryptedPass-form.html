@@ -1,0 +1,27 @@
+ <form [formGroup]="form" (ngSubmit)="UpdateDecryptedPass_Submit()">
+  <mat-form-field>
+    <mat-label>PassType (integer):</mat-label>
+    <!-- Aes/UpdateDecryptedPass -->
+    <input matInput formControlName="UpdateDecryptedPass_PassType" required
+      placeholder="">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>OldPass (string):</mat-label>
+    <!-- Aes/UpdateDecryptedPass -->
+    <input matInput formControlName="UpdateDecryptedPass_OldPass" required
+      placeholder="">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>NewPass (string):</mat-label>
+    <!-- Aes/UpdateDecryptedPass -->
+    <input matInput formControlName="UpdateDecryptedPass_NewPass" required
+      placeholder="">
+  </mat-form-field>
+
+  <div>
+    <button mat-mini-fab color="primary" type="submit">
+      <mat-icon>check icon</mat-icon>
+    </button>
+  </div>
+</form>
+<div id="UpdateDecryptedPass_Result"></div>

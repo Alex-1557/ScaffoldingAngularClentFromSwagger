@@ -1,0 +1,14 @@
+ <form [formGroup]="form" (ngSubmit)="GetRandomName_Submit()">
+  <mat-form-field>
+    <mat-label>Len (integer):</mat-label>
+    <!-- Aes/GetRandomName -->
+    <input matInput formControlName="GetRandomName_Len" required placeholder="">
+  </mat-form-field>
+
+  <div>
+    <button mat-mini-fab color="primary" type="submit">
+      <mat-icon>check icon</mat-icon>
+    </button>
+  </div>
+</form>
+<div id="GetRandomName_Result"></div>

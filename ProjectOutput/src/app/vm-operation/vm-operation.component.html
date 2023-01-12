@@ -1,0 +1,37 @@
+<mat-card>
+    <mat-card-header>
+        <mat-card-title>Virtual Machine's operations</mat-card-title>
+    </mat-card-header>
+    <mat-card-content>
+        <mat-list class="mat-small">
+            (User) 1. <u>Bash</u> : "OK. Finished."
+            <br>
+            <app-VmOperationBash></app-VmOperationBash>
+            <mat-divider style="margin: 10px;"></mat-divider>
+            (User) 2. <u>BashByKvm</u> : "API not found. Question asked in forums."
+            <br>
+            <app-VmOperationBashByKvm></app-VmOperationBashByKvm>
+            <mat-divider style="margin: 10px;"></mat-divider>
+            (User) 3. <u>VmStartByKvm</u> : "OK. Finished."
+            <br>
+            <app-VmOperationVmStartByKvm></app-VmOperationVmStartByKvm>
+            <mat-divider style="margin: 10px;"></mat-divider>
+            (User) 4. <u>VmStopByBash</u> : "OK. Finished."
+            <br>
+            <app-VmOperationVmStopByBash></app-VmOperationVmStopByBash>
+            <mat-divider style="margin: 10px;"></mat-divider>
+            (User) 5. <u>VmStopByKvm</u> : "OK. Finished."
+            <br>
+            <app-VmOperationVmStopByKvm></app-VmOperationVmStopByKvm>
+            <mat-divider style="margin: 10px;"></mat-divider>
+            (User) 6. <u>VmRebootByBash</u> : "OK. Finished."
+            <br>
+            <app-VmOperationVmRebootByBash></app-VmOperationVmRebootByBash>
+            <mat-divider style="margin: 10px;"></mat-divider>
+            (User) 7. <u>VmRebootByKvm</u> : "OK. Finished."
+            <br>
+            <app-VmOperationVmRebootByKvm></app-VmOperationVmRebootByKvm>
+            <mat-divider style="margin: 10px;"></mat-divider>
+        </mat-list>
+    </mat-card-content>
+</mat-card>

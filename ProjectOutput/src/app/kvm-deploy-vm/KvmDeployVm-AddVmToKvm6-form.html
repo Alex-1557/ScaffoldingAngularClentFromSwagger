@@ -1,0 +1,27 @@
+ <form [formGroup]="form" (ngSubmit)="AddVmToKvm6_Submit()">
+  <mat-form-field>
+    <mat-label>serverI (integer):</mat-label>
+    <!-- KvmDeployVm/AddVmToKvm6 -->
+    <input matInput formControlName="AddVmToKvm6_serverI" required
+      placeholder="">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>serverDecryptPass (string):</mat-label>
+    <!-- KvmDeployVm/AddVmToKvm6 -->
+    <input matInput formControlName="AddVmToKvm6_serverDecryptPass" required
+      placeholder="">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>xmlVmConfig (string):</mat-label>
+    <!-- KvmDeployVm/AddVmToKvm6 -->
+    <input matInput formControlName="AddVmToKvm6_xmlVmConfig" required
+      placeholder="">
+  </mat-form-field>
+
+  <div>
+    <button mat-mini-fab color="primary" type="submit">
+      <mat-icon>check icon</mat-icon>
+    </button>
+  </div>
+</form>
+<div id="AddVmToKvm6_Result"></div>

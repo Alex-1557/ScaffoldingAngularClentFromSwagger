@@ -1,0 +1,51 @@
+ <form [formGroup]="form" (ngSubmit)="SetUpMasternode4_Submit()">
+  <mat-form-field>
+    <mat-label>serverI (integer):</mat-label>
+    <!-- KvmDeployVm/SetUpMasternode4 -->
+    <input matInput formControlName="SetUpMasternode4_serverI" required
+      placeholder="">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>serverDecryptPass (string):</mat-label>
+    <!-- KvmDeployVm/SetUpMasternode4 -->
+    <input matInput formControlName="SetUpMasternode4_serverDecryptPass"
+      required placeholder="">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>kvmDevice (string):</mat-label>
+    <!-- KvmDeployVm/SetUpMasternode4 -->
+    <input matInput formControlName="SetUpMasternode4_kvmDevice" required
+      placeholder="">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>coinName (string):</mat-label>
+    <!-- KvmDeployVm/SetUpMasternode4 -->
+    <input matInput formControlName="SetUpMasternode4_coinName" required
+      placeholder="">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>configPath (string):</mat-label>
+    <!-- KvmDeployVm/SetUpMasternode4 -->
+    <input matInput formControlName="SetUpMasternode4_configPath" required
+      placeholder="">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>statusCommand (string):</mat-label>
+    <!-- KvmDeployVm/SetUpMasternode4 -->
+    <input matInput formControlName="SetUpMasternode4_statusCommand" required
+      placeholder="">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>config (string):</mat-label>
+    <!-- KvmDeployVm/SetUpMasternode4 -->
+    <input matInput formControlName="SetUpMasternode4_config" required
+      placeholder="">
+  </mat-form-field>
+
+  <div>
+    <button mat-mini-fab color="primary" type="submit">
+      <mat-icon>check icon</mat-icon>
+    </button>
+  </div>
+</form>
+<div id="SetUpMasternode4_Result"></div>

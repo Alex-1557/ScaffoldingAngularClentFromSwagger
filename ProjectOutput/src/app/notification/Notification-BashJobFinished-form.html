@@ -1,0 +1,62 @@
+ <form [formGroup]="form" (ngSubmit)="BashJobFinished_Submit()">
+  <mat-form-field>
+    <mat-label>i (integer):</mat-label>
+    <!-- Notification/BashJobFinished -->
+    <input matInput formControlName="BashJobFinished_i" required placeholder="">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>crDate (string):</mat-label>
+    <!-- Notification/BashJobFinished -->
+    <input matInput formControlName="BashJobFinished_crDate" required
+      placeholder="">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>toServer (integer):</mat-label>
+    <!-- Notification/BashJobFinished -->
+    <input matInput formControlName="BashJobFinished_toServer" required
+      placeholder="">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>toVm (integer):</mat-label>
+    <!-- Notification/BashJobFinished -->
+    <input matInput formControlName="BashJobFinished_toVm" required
+      placeholder="">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>toUser (integer):</mat-label>
+    <!-- Notification/BashJobFinished -->
+    <input matInput formControlName="BashJobFinished_toUser" required
+      placeholder="">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>command (string):</mat-label>
+    <!-- Notification/BashJobFinished -->
+    <input matInput formControlName="BashJobFinished_command" required
+      placeholder="">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>subscribeId (string):</mat-label>
+    <!-- Notification/BashJobFinished -->
+    <input matInput formControlName="BashJobFinished_subscribeId" required
+      placeholder="">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>comment (string):</mat-label>
+    <!-- Notification/BashJobFinished -->
+    <input matInput formControlName="BashJobFinished_comment" required
+      placeholder="">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>lastUpdate (string):</mat-label>
+    <!-- Notification/BashJobFinished -->
+    <input matInput formControlName="BashJobFinished_lastUpdate" required
+      placeholder="">
+  </mat-form-field>
+
+  <div>
+    <button mat-mini-fab color="primary" type="submit">
+      <mat-icon>check icon</mat-icon>
+    </button>
+  </div>
+</form>
+<div id="BashJobFinished_Result"></div>

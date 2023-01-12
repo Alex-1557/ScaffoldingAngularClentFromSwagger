@@ -1,0 +1,21 @@
+ <form [formGroup]="form" (ngSubmit)="SqlDeCrypt_Submit()">
+  <mat-form-field>
+    <mat-label>HexCipherText (string):</mat-label>
+    <!-- Aes/SqlDeCrypt -->
+    <input matInput formControlName="SqlDeCrypt_HexCipherText" required
+      placeholder="">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>KeyString (string):</mat-label>
+    <!-- Aes/SqlDeCrypt -->
+    <input matInput formControlName="SqlDeCrypt_KeyString" required
+      placeholder="">
+  </mat-form-field>
+
+  <div>
+    <button mat-mini-fab color="primary" type="submit">
+      <mat-icon>check icon</mat-icon>
+    </button>
+  </div>
+</form>
+<div id="SqlDeCrypt_Result"></div>

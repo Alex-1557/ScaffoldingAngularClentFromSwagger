@@ -1,0 +1,21 @@
+ <form [formGroup]="form" (ngSubmit)="GetDockerInfo_Submit()">
+  <mat-form-field>
+    <mat-label>dockerHubI (integer):</mat-label>
+    <!-- Docker/GetDockerInfo -->
+    <input matInput formControlName="GetDockerInfo_dockerHubI" required
+      placeholder="">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>dockerHubDecryptPass (string):</mat-label>
+    <!-- Docker/GetDockerInfo -->
+    <input matInput formControlName="GetDockerInfo_dockerHubDecryptPass"
+      required placeholder="">
+  </mat-form-field>
+
+  <div>
+    <button mat-mini-fab color="primary" type="submit">
+      <mat-icon>check icon</mat-icon>
+    </button>
+  </div>
+</form>
+<div id="GetDockerInfo_Result"></div>

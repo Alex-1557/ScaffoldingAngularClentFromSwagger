@@ -1,0 +1,59 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>ApiRequestParametersBuilder</RootNamespace>
+    <TargetFramework>net6.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="AngularTemplateComponent.txt" />
+    <None Remove="AngularTemplateComponentFormControl.txt" />
+    <None Remove="AngularTemplateComponentValue.txt" />
+    <None Remove="AngularTemplateForm.txt" />
+    <None Remove="AngularTemplatePrm.txt" />
+    <None Remove="AngularTemplateService.txt" />
+    <None Remove="AngularTemplateServiceGet.txt" />
+    <None Remove="AngularTemplateServiceGetPrm.txt" />
+    <None Remove="AngularTemplateServiceImport.txt" />
+    <None Remove="AngularTemplateServicePost.txt" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="AngularTemplateComponent.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="AngularTemplateComponentFormControl.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="AngularTemplateComponentValue.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="AngularTemplateForm.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="AngularTemplatePrm.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="AngularTemplateService.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="AngularTemplateServiceGet.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="AngularTemplateServiceGetPrm.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="AngularTemplateServiceImport.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="AngularTemplateServicePost.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.2" />
+  </ItemGroup>
+
+</Project>

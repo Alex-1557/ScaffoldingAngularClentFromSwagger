@@ -1,0 +1,21 @@
+ <form [formGroup]="form" (ngSubmit)="GetRuntimeBridgeList_Submit()">
+  <mat-form-field>
+    <mat-label>serverI (integer):</mat-label>
+    <!-- KvmIp/GetRuntimeBridgeList -->
+    <input matInput formControlName="GetRuntimeBridgeList_serverI" required
+      placeholder="">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>serverDecryptPass (string):</mat-label>
+    <!-- KvmIp/GetRuntimeBridgeList -->
+    <input matInput formControlName="GetRuntimeBridgeList_serverDecryptPass"
+      required placeholder="">
+  </mat-form-field>
+
+  <div>
+    <button mat-mini-fab color="primary" type="submit">
+      <mat-icon>check icon</mat-icon>
+    </button>
+  </div>
+</form>
+<div id="GetRuntimeBridgeList_Result"></div>
