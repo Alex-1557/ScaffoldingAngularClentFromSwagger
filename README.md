@@ -20,7 +20,7 @@ And create manually this text 168 times
 
 without syntax mistake is impossible job, and I could repeate similar wrapper 168 times! This is stupid and impossible job therefore I have created this Angular Client generator.
 
-Also this project produced two addional files needed for Angular client.
+Also this project produced two additional files needed for Angular client.
 
 ![Angular_01122023_133305_1](https://user-images.githubusercontent.com/104725261/212056339-c0b16e43-643e-4ec9-87aa-7bbfa1f8ec4c.png)
 
