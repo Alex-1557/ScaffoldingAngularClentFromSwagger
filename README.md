@@ -10,7 +10,7 @@ In my case I have 168 Angular components
 
 ![Frontend_01112023_235721_1](https://user-images.githubusercontent.com/104725261/212054769-c22d9990-e5fb-4868-86cf-29492647d047.png)
 
-In my case each API has a lot of parameters
+and each API has a lot of parameters
 
 ![TDS_01122023_132647_1](https://user-images.githubusercontent.com/104725261/212055319-e53bcf04-f293-402f-9011-928a46b5a96e.png)
 
